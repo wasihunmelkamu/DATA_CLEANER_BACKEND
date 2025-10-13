@@ -1,4 +1,3 @@
-// routes/cleanup.routes.ts
 import { Router } from "express";
 import {
   cleanupTableDataController,
@@ -11,9 +10,8 @@ import {
 import {
   getEntitiesWithGivenNameController,
   analyzeDuplicateEntitiesController,
-  // getPotentialDuplicateEntitiesGroupsTestController,
 } from "../controllers/entitiesMerge.controller";
-import { applyEntitiesDuplicateMergeController } from "../controllers/applyEntitiesDuplicateMerge.controller";
+import { applyEntitiesDuplicateMergeController, applyEntitiesDuplicateMergeManuallyController } from "../controllers/applyEntitiesDuplicateMerge.controller";
 
 const router = Router();
 router.post("/", cleanupTableDataController);
@@ -45,6 +43,11 @@ router.post(
 router.post(
   "/entities/resolve-duplicates",
   applyEntitiesDuplicateMergeController
+);
+
+router.post(
+  "/entities/resolve-duplicates/manual",
+  applyEntitiesDuplicateMergeManuallyController
 );
 
 // !

@@ -182,3 +182,306 @@ Please make sure your database server is running at `4.234.194.233:3308`.
     at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/dataCleanUp.controller.ts:775:22
     at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
 2025-09-12 20:21:04 [info]: 🚀 Server running at http://localhost:3003
+2025-10-12 03:30:10 [info]: 🚀 Server running at http://localhost:3003
+2025-10-12 03:30:47 [error]: PrismaClientInitializationError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7759)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/dataCleanUp.controller.ts:775:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-12 03:30:54 [error]: PrismaClientInitializationError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7759)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/dataCleanUp.controller.ts:775:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-12 03:34:13 [info]: 🚀 Server running at http://localhost:3003
+2025-10-12 03:45:07 [info]: 🚀 Server running at http://localhost:3003
+2025-10-12 03:45:43 [info]: 🚀 Server running at http://localhost:3003
+2025-10-12 04:06:59 [info]: 🚀 Server running at http://localhost:3003
+2025-10-12 06:43:56 [info]: 🚀 Server running at http://localhost:3003
+2025-10-12 07:04:52 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/entitiesMerge.controller.ts:265:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-12 07:04:59 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/entitiesMerge.controller.ts:265:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-12 07:05:25 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/entitiesMerge.controller.ts:265:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-12 07:05:32 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/entitiesMerge.controller.ts:265:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-12 07:05:45 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/entitiesMerge.controller.ts:265:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-12 10:20:57 [info]: 🚀 Server running at http://localhost:3003
+2025-10-12 10:58:14 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/entitiesMerge.controller.ts:265:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-12 10:58:20 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/entitiesMerge.controller.ts:265:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-12 21:13:19 [info]: 🚀 Server running at http://localhost:3003
+2025-10-12 21:13:49 [error]: PrismaClientInitializationError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7759)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/dataCleanUp.controller.ts:791:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-12 21:36:36 [info]: 🚀 Server running at http://localhost:3003
+2025-10-12 21:36:53 [info]: 🚀 Server running at http://localhost:3003
+2025-10-12 21:50:11 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/entitiesMerge.controller.ts:265:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-12 21:50:41 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/entitiesMerge.controller.ts:265:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-12 21:55:38 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/dataCleanUp.controller.ts:791:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-13 07:30:40 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Timed out fetching a new connection from the connection pool. More info: http://pris.ly/d/connection-pool (Current connection pool timeout: 10, connection limit: 21)
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/applyEntitiesDuplicateMerge.controller.ts:90:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-13 07:31:18 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/dataCleanUp.controller.ts:791:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-13 07:31:23 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/dataCleanUp.controller.ts:791:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-14 01:11:13 [info]: 🚀 Server running at http://localhost:3003
+2025-10-14 01:13:08 [error]: PrismaClientInitializationError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7759)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/dataCleanUp.controller.ts:791:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-14 01:19:55 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/dataCleanUp.controller.ts:791:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-14 01:20:00 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/entitiesMerge.controller.ts:265:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-14 01:20:48 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/entitiesMerge.controller.ts:265:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7
+2025-10-14 02:00:47 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ri.handleRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6784)
+    at ri.request (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:124:6491)
+    at async l (/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/entities_prod/runtime/library.js:133:9812)
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/config/db.ts:33:18
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/controllers/dataCleanUp.controller.ts:791:22
+    at async /home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/src/utils/asyncHandler.ts:24:7

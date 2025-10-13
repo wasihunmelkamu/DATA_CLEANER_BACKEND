@@ -15,7 +15,7 @@ import {
   UserMergeInput,
   UserMergeOutput,
 } from "../services/duplication-ai.service";
-import { number } from "zod";
+import z, { number } from "zod";
 import { AIServiceResult } from "../services/aiService.service";
 import { address, entity_property } from "../../generated/client/entities_prod";
 import { writeFile } from "fs/promises";
@@ -757,9 +757,21 @@ export const getDuplicateEntitiesByFullNameController = expressAsyncWrapper(
   }
 );
 
+const paginationSchema = z.object({
+  page: z.coerce.number().min(1).default(1),
+  limit: z.coerce.number().min(1).default(20)
+})
+
 export const getDuplicateEntitiesByNameWithTypeController =
   expressAsyncWrapper(async (req, res) => {
     const type = req.params["type"];
+
+    const { data: pagination, error: paginationError, success: isPaginationValid } = paginationSchema.safeParse(req.query)
+
+    if (!isPaginationValid) {
+      const [{ message }, ...rest] = zodErrorFmt(paginationError)
+      throw RouteError.BadRequest(message, rest)
+    }
 
     if (!type) {
       throw RouteError.BadRequest("Entity type not provided");
@@ -771,6 +783,10 @@ export const getDuplicateEntitiesByNameWithTypeController =
     if (!ENTITY_TYPES.find((i) => i === parsedType)) {
       throw RouteError.BadRequest("Invalid entity type provided. (" + parsedType + ")");
     }
+
+    const { page, limit } = pagination
+
+    const offset = (page - 1) * limit
 
     const entities = await entitiesPrisma.entity.findMany({
       where: {
@@ -811,18 +827,21 @@ export const getDuplicateEntitiesByNameWithTypeController =
     }
 
     // Filter: only keep groups with 2 or more people
-    const duplicateGroups = [];
+    const duplicateGroups: { name: string, duplicateCount: number }[] = [];
     for (const [name, group] of nameGroups) {
       if (group.length >= 2) {
-        duplicateGroups.push(name);
+        duplicateGroups.push({ name, duplicateCount: group.length });
       }
     }
+
+
+    const paginatedResult = duplicateGroups.slice(offset, offset + limit)
 
     return APIResponseWriter({
       res,
       message: "Duplicate entities grouped by name retrieved successfully",
       statusCode: StatusCodes.OK,
       success: true,
-      data: duplicateGroups,
+      data: { duplicateGroups: paginatedResult, pagination: { limit, page, offset, total: duplicateGroups.length } },
     });
   });
