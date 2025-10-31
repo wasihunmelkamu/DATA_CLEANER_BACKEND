@@ -4,7 +4,7 @@
   "description": "A backend service that cleans and normalizes data using Azure OpenAI and Prisma with MySQL.",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "nodemon",
+    "dev": "nodemon src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
     "prisma:generate": "prisma generate --schema=prisma/dms_prod.prisma && prisma generate --schema=prisma/entities.prod.prisma",
@@ -31,7 +31,7 @@
     "@azure/core-auth": "^1.10.0",
     "@azure/identity": "^4.10.2",
     "@azure/openai": "^2.0.0",
-    "@prisma/client": "^6.12.0",
+    "@prisma/client": "^6.18.0",
     "axios": "^1.11.0",
     "cors": "^2.8.5",
     "date-fns": "^4.1.0",
@@ -58,7 +58,7 @@
     "@types/node": "^20.4.2",
     "@types/swagger-ui-express": "^4.1.8",
     "@types/winston": "^2.4.4",
-    "nodemon": "^3.0.2",
+    "nodemon": "^3.1.10",
     "prisma": "^6.12.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"

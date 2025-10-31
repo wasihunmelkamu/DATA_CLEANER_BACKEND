@@ -4,6 +4,7 @@ import logger from "../libs/logger";
 import APIResponseWriter from "../utils/apiResponseWriter";
 import { Prisma } from "@prisma/client";
 
+
 const expressRouteErrorHandlerMiddleware: ErrorRequestHandler = (
   err: any,
   _: Request,
