@@ -69,11 +69,6 @@ export type entity_mapping = $Result.DefaultSelection<Prisma.$entity_mappingPayl
  */
 export type entity_property = $Result.DefaultSelection<Prisma.$entity_propertyPayload>
 /**
- * Model entity_required_document
- * The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
- */
-export type entity_required_document = $Result.DefaultSelection<Prisma.$entity_required_documentPayload>
-/**
  * Model entity_risk_and_rates
  * 
  */
@@ -416,16 +411,6 @@ export class PrismaClient<
     * ```
     */
   get entity_property(): Prisma.entity_propertyDelegate<ExtArgs, ClientOptions>;
-
-  /**
-   * `prisma.entity_required_document`: Exposes CRUD operations for the **entity_required_document** model.
-    * Example usage:
-    * ```ts
-    * // Fetch zero or more Entity_required_documents
-    * const entity_required_documents = await prisma.entity_required_document.findMany()
-    * ```
-    */
-  get entity_required_document(): Prisma.entity_required_documentDelegate<ExtArgs, ClientOptions>;
 
   /**
    * `prisma.entity_risk_and_rates`: Exposes CRUD operations for the **entity_risk_and_rates** model.
@@ -987,7 +972,6 @@ export namespace Prisma {
     entity_contact: 'entity_contact',
     entity_mapping: 'entity_mapping',
     entity_property: 'entity_property',
-    entity_required_document: 'entity_required_document',
     entity_risk_and_rates: 'entity_risk_and_rates',
     entity_role: 'entity_role',
     param: 'param',
@@ -1017,7 +1001,7 @@ export namespace Prisma {
       omit: GlobalOmitOptions
     }
     meta: {
-      modelProps: "address" | "agency" | "asset" | "bank" | "bank_account" | "buy" | "demo_users" | "entity" | "entity_contact" | "entity_mapping" | "entity_property" | "entity_required_document" | "entity_risk_and_rates" | "entity_role" | "param" | "param_country" | "param_sequence" | "param_table" | "people" | "phone" | "property" | "rating" | "role"
+      modelProps: "address" | "agency" | "asset" | "bank" | "bank_account" | "buy" | "demo_users" | "entity" | "entity_contact" | "entity_mapping" | "entity_property" | "entity_risk_and_rates" | "entity_role" | "param" | "param_country" | "param_sequence" | "param_table" | "people" | "phone" | "property" | "rating" | "role"
       txIsolationLevel: Prisma.TransactionIsolationLevel
     }
     model: {
@@ -1744,72 +1728,6 @@ export namespace Prisma {
           count: {
             args: Prisma.entity_propertyCountArgs<ExtArgs>
             result: $Utils.Optional<Entity_propertyCountAggregateOutputType> | number
-          }
-        }
-      }
-      entity_required_document: {
-        payload: Prisma.$entity_required_documentPayload<ExtArgs>
-        fields: Prisma.entity_required_documentFieldRefs
-        operations: {
-          findUnique: {
-            args: Prisma.entity_required_documentFindUniqueArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$entity_required_documentPayload> | null
-          }
-          findUniqueOrThrow: {
-            args: Prisma.entity_required_documentFindUniqueOrThrowArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$entity_required_documentPayload>
-          }
-          findFirst: {
-            args: Prisma.entity_required_documentFindFirstArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$entity_required_documentPayload> | null
-          }
-          findFirstOrThrow: {
-            args: Prisma.entity_required_documentFindFirstOrThrowArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$entity_required_documentPayload>
-          }
-          findMany: {
-            args: Prisma.entity_required_documentFindManyArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$entity_required_documentPayload>[]
-          }
-          create: {
-            args: Prisma.entity_required_documentCreateArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$entity_required_documentPayload>
-          }
-          createMany: {
-            args: Prisma.entity_required_documentCreateManyArgs<ExtArgs>
-            result: BatchPayload
-          }
-          delete: {
-            args: Prisma.entity_required_documentDeleteArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$entity_required_documentPayload>
-          }
-          update: {
-            args: Prisma.entity_required_documentUpdateArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$entity_required_documentPayload>
-          }
-          deleteMany: {
-            args: Prisma.entity_required_documentDeleteManyArgs<ExtArgs>
-            result: BatchPayload
-          }
-          updateMany: {
-            args: Prisma.entity_required_documentUpdateManyArgs<ExtArgs>
-            result: BatchPayload
-          }
-          upsert: {
-            args: Prisma.entity_required_documentUpsertArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$entity_required_documentPayload>
-          }
-          aggregate: {
-            args: Prisma.Entity_required_documentAggregateArgs<ExtArgs>
-            result: $Utils.Optional<AggregateEntity_required_document>
-          }
-          groupBy: {
-            args: Prisma.entity_required_documentGroupByArgs<ExtArgs>
-            result: $Utils.Optional<Entity_required_documentGroupByOutputType>[]
-          }
-          count: {
-            args: Prisma.entity_required_documentCountArgs<ExtArgs>
-            result: $Utils.Optional<Entity_required_documentCountAggregateOutputType> | number
           }
         }
       }
@@ -2634,7 +2552,6 @@ export namespace Prisma {
     entity_contact?: entity_contactOmit
     entity_mapping?: entity_mappingOmit
     entity_property?: entity_propertyOmit
-    entity_required_document?: entity_required_documentOmit
     entity_risk_and_rates?: entity_risk_and_ratesOmit
     entity_role?: entity_roleOmit
     param?: paramOmit
@@ -2811,7 +2728,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity: number
     entity_property_entity_property_entity_idToentity: number
     entity_property_entity_property_parent_idToentity: number
-    entity_required_document: number
     entity_risk_and_rates: number
     entity_role: number
     people: number
@@ -2827,7 +2743,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: boolean | EntityCountOutputTypeCountEntity_mapping_entity_mapping_entity_idToentityArgs
     entity_property_entity_property_entity_idToentity?: boolean | EntityCountOutputTypeCountEntity_property_entity_property_entity_idToentityArgs
     entity_property_entity_property_parent_idToentity?: boolean | EntityCountOutputTypeCountEntity_property_entity_property_parent_idToentityArgs
-    entity_required_document?: boolean | EntityCountOutputTypeCountEntity_required_documentArgs
     entity_risk_and_rates?: boolean | EntityCountOutputTypeCountEntity_risk_and_ratesArgs
     entity_role?: boolean | EntityCountOutputTypeCountEntity_roleArgs
     people?: boolean | EntityCountOutputTypeCountPeopleArgs
@@ -2905,13 +2820,6 @@ export namespace Prisma {
    */
   export type EntityCountOutputTypeCountEntity_property_entity_property_parent_idToentityArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: entity_propertyWhereInput
-  }
-
-  /**
-   * EntityCountOutputType without action
-   */
-  export type EntityCountOutputTypeCountEntity_required_documentArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    where?: entity_required_documentWhereInput
   }
 
   /**
@@ -11746,7 +11654,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: boolean | entity$entity_mapping_entity_mapping_entity_idToentityArgs<ExtArgs>
     entity_property_entity_property_entity_idToentity?: boolean | entity$entity_property_entity_property_entity_idToentityArgs<ExtArgs>
     entity_property_entity_property_parent_idToentity?: boolean | entity$entity_property_entity_property_parent_idToentityArgs<ExtArgs>
-    entity_required_document?: boolean | entity$entity_required_documentArgs<ExtArgs>
     entity_risk_and_rates?: boolean | entity$entity_risk_and_ratesArgs<ExtArgs>
     entity_role?: boolean | entity$entity_roleArgs<ExtArgs>
     people?: boolean | entity$peopleArgs<ExtArgs>
@@ -11785,7 +11692,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: boolean | entity$entity_mapping_entity_mapping_entity_idToentityArgs<ExtArgs>
     entity_property_entity_property_entity_idToentity?: boolean | entity$entity_property_entity_property_entity_idToentityArgs<ExtArgs>
     entity_property_entity_property_parent_idToentity?: boolean | entity$entity_property_entity_property_parent_idToentityArgs<ExtArgs>
-    entity_required_document?: boolean | entity$entity_required_documentArgs<ExtArgs>
     entity_risk_and_rates?: boolean | entity$entity_risk_and_ratesArgs<ExtArgs>
     entity_role?: boolean | entity$entity_roleArgs<ExtArgs>
     people?: boolean | entity$peopleArgs<ExtArgs>
@@ -11804,7 +11710,6 @@ export namespace Prisma {
       entity_mapping_entity_mapping_entity_idToentity: Prisma.$entity_mappingPayload<ExtArgs>[]
       entity_property_entity_property_entity_idToentity: Prisma.$entity_propertyPayload<ExtArgs>[]
       entity_property_entity_property_parent_idToentity: Prisma.$entity_propertyPayload<ExtArgs>[]
-      entity_required_document: Prisma.$entity_required_documentPayload<ExtArgs>[]
       entity_risk_and_rates: Prisma.$entity_risk_and_ratesPayload<ExtArgs>[]
       entity_role: Prisma.$entity_rolePayload<ExtArgs>[]
       people: Prisma.$peoplePayload<ExtArgs>[]
@@ -12175,7 +12080,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity<T extends entity$entity_mapping_entity_mapping_entity_idToentityArgs<ExtArgs> = {}>(args?: Subset<T, entity$entity_mapping_entity_mapping_entity_idToentityArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$entity_mappingPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     entity_property_entity_property_entity_idToentity<T extends entity$entity_property_entity_property_entity_idToentityArgs<ExtArgs> = {}>(args?: Subset<T, entity$entity_property_entity_property_entity_idToentityArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$entity_propertyPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     entity_property_entity_property_parent_idToentity<T extends entity$entity_property_entity_property_parent_idToentityArgs<ExtArgs> = {}>(args?: Subset<T, entity$entity_property_entity_property_parent_idToentityArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$entity_propertyPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    entity_required_document<T extends entity$entity_required_documentArgs<ExtArgs> = {}>(args?: Subset<T, entity$entity_required_documentArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$entity_required_documentPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     entity_risk_and_rates<T extends entity$entity_risk_and_ratesArgs<ExtArgs> = {}>(args?: Subset<T, entity$entity_risk_and_ratesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$entity_risk_and_ratesPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     entity_role<T extends entity$entity_roleArgs<ExtArgs> = {}>(args?: Subset<T, entity$entity_roleArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$entity_rolePayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     people<T extends entity$peopleArgs<ExtArgs> = {}>(args?: Subset<T, entity$peopleArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$peoplePayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
@@ -12780,30 +12684,6 @@ export namespace Prisma {
     take?: number
     skip?: number
     distinct?: Entity_propertyScalarFieldEnum | Entity_propertyScalarFieldEnum[]
-  }
-
-  /**
-   * entity.entity_required_document
-   */
-  export type entity$entity_required_documentArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the entity_required_document
-     */
-    select?: entity_required_documentSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the entity_required_document
-     */
-    omit?: entity_required_documentOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: entity_required_documentInclude<ExtArgs> | null
-    where?: entity_required_documentWhereInput
-    orderBy?: entity_required_documentOrderByWithRelationInput | entity_required_documentOrderByWithRelationInput[]
-    cursor?: entity_required_documentWhereUniqueInput
-    take?: number
-    skip?: number
-    distinct?: Entity_required_documentScalarFieldEnum | Entity_required_documentScalarFieldEnum[]
   }
 
   /**
@@ -15994,1035 +15874,6 @@ export namespace Prisma {
      * Choose, which related nodes to fetch as well
      */
     include?: entity_propertyInclude<ExtArgs> | null
-  }
-
-
-  /**
-   * Model entity_required_document
-   */
-
-  export type AggregateEntity_required_document = {
-    _count: Entity_required_documentCountAggregateOutputType | null
-    _avg: Entity_required_documentAvgAggregateOutputType | null
-    _sum: Entity_required_documentSumAggregateOutputType | null
-    _min: Entity_required_documentMinAggregateOutputType | null
-    _max: Entity_required_documentMaxAggregateOutputType | null
-  }
-
-  export type Entity_required_documentAvgAggregateOutputType = {
-    entity_id: number | null
-  }
-
-  export type Entity_required_documentSumAggregateOutputType = {
-    entity_id: number | null
-  }
-
-  export type Entity_required_documentMinAggregateOutputType = {
-    entity_id: number | null
-    ETR_file: boolean | null
-    organisation_file: boolean | null
-    PO_file: boolean | null
-    PoD_file: boolean | null
-    signed_file: boolean | null
-    fx_file: boolean | null
-    proof_file: boolean | null
-    created_at: Date | null
-    updated_at: Date | null
-    deleted_at: Date | null
-  }
-
-  export type Entity_required_documentMaxAggregateOutputType = {
-    entity_id: number | null
-    ETR_file: boolean | null
-    organisation_file: boolean | null
-    PO_file: boolean | null
-    PoD_file: boolean | null
-    signed_file: boolean | null
-    fx_file: boolean | null
-    proof_file: boolean | null
-    created_at: Date | null
-    updated_at: Date | null
-    deleted_at: Date | null
-  }
-
-  export type Entity_required_documentCountAggregateOutputType = {
-    entity_id: number
-    ETR_file: number
-    organisation_file: number
-    PO_file: number
-    PoD_file: number
-    signed_file: number
-    fx_file: number
-    proof_file: number
-    created_at: number
-    updated_at: number
-    deleted_at: number
-    _all: number
-  }
-
-
-  export type Entity_required_documentAvgAggregateInputType = {
-    entity_id?: true
-  }
-
-  export type Entity_required_documentSumAggregateInputType = {
-    entity_id?: true
-  }
-
-  export type Entity_required_documentMinAggregateInputType = {
-    entity_id?: true
-    ETR_file?: true
-    organisation_file?: true
-    PO_file?: true
-    PoD_file?: true
-    signed_file?: true
-    fx_file?: true
-    proof_file?: true
-    created_at?: true
-    updated_at?: true
-    deleted_at?: true
-  }
-
-  export type Entity_required_documentMaxAggregateInputType = {
-    entity_id?: true
-    ETR_file?: true
-    organisation_file?: true
-    PO_file?: true
-    PoD_file?: true
-    signed_file?: true
-    fx_file?: true
-    proof_file?: true
-    created_at?: true
-    updated_at?: true
-    deleted_at?: true
-  }
-
-  export type Entity_required_documentCountAggregateInputType = {
-    entity_id?: true
-    ETR_file?: true
-    organisation_file?: true
-    PO_file?: true
-    PoD_file?: true
-    signed_file?: true
-    fx_file?: true
-    proof_file?: true
-    created_at?: true
-    updated_at?: true
-    deleted_at?: true
-    _all?: true
-  }
-
-  export type Entity_required_documentAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Filter which entity_required_document to aggregate.
-     */
-    where?: entity_required_documentWhereInput
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
-     * 
-     * Determine the order of entity_required_documents to fetch.
-     */
-    orderBy?: entity_required_documentOrderByWithRelationInput | entity_required_documentOrderByWithRelationInput[]
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
-     * 
-     * Sets the start position
-     */
-    cursor?: entity_required_documentWhereUniqueInput
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
-     * 
-     * Take `±n` entity_required_documents from the position of the cursor.
-     */
-    take?: number
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
-     * 
-     * Skip the first `n` entity_required_documents.
-     */
-    skip?: number
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
-     * 
-     * Count returned entity_required_documents
-    **/
-    _count?: true | Entity_required_documentCountAggregateInputType
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
-     * 
-     * Select which fields to average
-    **/
-    _avg?: Entity_required_documentAvgAggregateInputType
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
-     * 
-     * Select which fields to sum
-    **/
-    _sum?: Entity_required_documentSumAggregateInputType
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
-     * 
-     * Select which fields to find the minimum value
-    **/
-    _min?: Entity_required_documentMinAggregateInputType
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
-     * 
-     * Select which fields to find the maximum value
-    **/
-    _max?: Entity_required_documentMaxAggregateInputType
-  }
-
-  export type GetEntity_required_documentAggregateType<T extends Entity_required_documentAggregateArgs> = {
-        [P in keyof T & keyof AggregateEntity_required_document]: P extends '_count' | 'count'
-      ? T[P] extends true
-        ? number
-        : GetScalarType<T[P], AggregateEntity_required_document[P]>
-      : GetScalarType<T[P], AggregateEntity_required_document[P]>
-  }
-
-
-
-
-  export type entity_required_documentGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    where?: entity_required_documentWhereInput
-    orderBy?: entity_required_documentOrderByWithAggregationInput | entity_required_documentOrderByWithAggregationInput[]
-    by: Entity_required_documentScalarFieldEnum[] | Entity_required_documentScalarFieldEnum
-    having?: entity_required_documentScalarWhereWithAggregatesInput
-    take?: number
-    skip?: number
-    _count?: Entity_required_documentCountAggregateInputType | true
-    _avg?: Entity_required_documentAvgAggregateInputType
-    _sum?: Entity_required_documentSumAggregateInputType
-    _min?: Entity_required_documentMinAggregateInputType
-    _max?: Entity_required_documentMaxAggregateInputType
-  }
-
-  export type Entity_required_documentGroupByOutputType = {
-    entity_id: number
-    ETR_file: boolean | null
-    organisation_file: boolean | null
-    PO_file: boolean | null
-    PoD_file: boolean | null
-    signed_file: boolean | null
-    fx_file: boolean | null
-    proof_file: boolean | null
-    created_at: Date | null
-    updated_at: Date | null
-    deleted_at: Date | null
-    _count: Entity_required_documentCountAggregateOutputType | null
-    _avg: Entity_required_documentAvgAggregateOutputType | null
-    _sum: Entity_required_documentSumAggregateOutputType | null
-    _min: Entity_required_documentMinAggregateOutputType | null
-    _max: Entity_required_documentMaxAggregateOutputType | null
-  }
-
-  type GetEntity_required_documentGroupByPayload<T extends entity_required_documentGroupByArgs> = Prisma.PrismaPromise<
-    Array<
-      PickEnumerable<Entity_required_documentGroupByOutputType, T['by']> &
-        {
-          [P in ((keyof T) & (keyof Entity_required_documentGroupByOutputType))]: P extends '_count'
-            ? T[P] extends boolean
-              ? number
-              : GetScalarType<T[P], Entity_required_documentGroupByOutputType[P]>
-            : GetScalarType<T[P], Entity_required_documentGroupByOutputType[P]>
-        }
-      >
-    >
-
-
-  export type entity_required_documentSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    entity_id?: boolean
-    ETR_file?: boolean
-    organisation_file?: boolean
-    PO_file?: boolean
-    PoD_file?: boolean
-    signed_file?: boolean
-    fx_file?: boolean
-    proof_file?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    deleted_at?: boolean
-    entity?: boolean | entityDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["entity_required_document"]>
-
-
-
-  export type entity_required_documentSelectScalar = {
-    entity_id?: boolean
-    ETR_file?: boolean
-    organisation_file?: boolean
-    PO_file?: boolean
-    PoD_file?: boolean
-    signed_file?: boolean
-    fx_file?: boolean
-    proof_file?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    deleted_at?: boolean
-  }
-
-  export type entity_required_documentOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"entity_id" | "ETR_file" | "organisation_file" | "PO_file" | "PoD_file" | "signed_file" | "fx_file" | "proof_file" | "created_at" | "updated_at" | "deleted_at", ExtArgs["result"]["entity_required_document"]>
-  export type entity_required_documentInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    entity?: boolean | entityDefaultArgs<ExtArgs>
-  }
-
-  export type $entity_required_documentPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    name: "entity_required_document"
-    objects: {
-      entity: Prisma.$entityPayload<ExtArgs>
-    }
-    scalars: $Extensions.GetPayloadResult<{
-      entity_id: number
-      ETR_file: boolean | null
-      organisation_file: boolean | null
-      PO_file: boolean | null
-      PoD_file: boolean | null
-      signed_file: boolean | null
-      fx_file: boolean | null
-      proof_file: boolean | null
-      created_at: Date | null
-      updated_at: Date | null
-      deleted_at: Date | null
-    }, ExtArgs["result"]["entity_required_document"]>
-    composites: {}
-  }
-
-  type entity_required_documentGetPayload<S extends boolean | null | undefined | entity_required_documentDefaultArgs> = $Result.GetResult<Prisma.$entity_required_documentPayload, S>
-
-  type entity_required_documentCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
-    Omit<entity_required_documentFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
-      select?: Entity_required_documentCountAggregateInputType | true
-    }
-
-  export interface entity_required_documentDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
-    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['entity_required_document'], meta: { name: 'entity_required_document' } }
-    /**
-     * Find zero or one Entity_required_document that matches the filter.
-     * @param {entity_required_documentFindUniqueArgs} args - Arguments to find a Entity_required_document
-     * @example
-     * // Get one Entity_required_document
-     * const entity_required_document = await prisma.entity_required_document.findUnique({
-     *   where: {
-     *     // ... provide filter here
-     *   }
-     * })
-     */
-    findUnique<T extends entity_required_documentFindUniqueArgs>(args: SelectSubset<T, entity_required_documentFindUniqueArgs<ExtArgs>>): Prisma__entity_required_documentClient<$Result.GetResult<Prisma.$entity_required_documentPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
-
-    /**
-     * Find one Entity_required_document that matches the filter or throw an error with `error.code='P2025'`
-     * if no matches were found.
-     * @param {entity_required_documentFindUniqueOrThrowArgs} args - Arguments to find a Entity_required_document
-     * @example
-     * // Get one Entity_required_document
-     * const entity_required_document = await prisma.entity_required_document.findUniqueOrThrow({
-     *   where: {
-     *     // ... provide filter here
-     *   }
-     * })
-     */
-    findUniqueOrThrow<T extends entity_required_documentFindUniqueOrThrowArgs>(args: SelectSubset<T, entity_required_documentFindUniqueOrThrowArgs<ExtArgs>>): Prisma__entity_required_documentClient<$Result.GetResult<Prisma.$entity_required_documentPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
-
-    /**
-     * Find the first Entity_required_document that matches the filter.
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * @param {entity_required_documentFindFirstArgs} args - Arguments to find a Entity_required_document
-     * @example
-     * // Get one Entity_required_document
-     * const entity_required_document = await prisma.entity_required_document.findFirst({
-     *   where: {
-     *     // ... provide filter here
-     *   }
-     * })
-     */
-    findFirst<T extends entity_required_documentFindFirstArgs>(args?: SelectSubset<T, entity_required_documentFindFirstArgs<ExtArgs>>): Prisma__entity_required_documentClient<$Result.GetResult<Prisma.$entity_required_documentPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
-
-    /**
-     * Find the first Entity_required_document that matches the filter or
-     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * @param {entity_required_documentFindFirstOrThrowArgs} args - Arguments to find a Entity_required_document
-     * @example
-     * // Get one Entity_required_document
-     * const entity_required_document = await prisma.entity_required_document.findFirstOrThrow({
-     *   where: {
-     *     // ... provide filter here
-     *   }
-     * })
-     */
-    findFirstOrThrow<T extends entity_required_documentFindFirstOrThrowArgs>(args?: SelectSubset<T, entity_required_documentFindFirstOrThrowArgs<ExtArgs>>): Prisma__entity_required_documentClient<$Result.GetResult<Prisma.$entity_required_documentPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
-
-    /**
-     * Find zero or more Entity_required_documents that matches the filter.
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * @param {entity_required_documentFindManyArgs} args - Arguments to filter and select certain fields only.
-     * @example
-     * // Get all Entity_required_documents
-     * const entity_required_documents = await prisma.entity_required_document.findMany()
-     * 
-     * // Get first 10 Entity_required_documents
-     * const entity_required_documents = await prisma.entity_required_document.findMany({ take: 10 })
-     * 
-     * // Only select the `entity_id`
-     * const entity_required_documentWithEntity_idOnly = await prisma.entity_required_document.findMany({ select: { entity_id: true } })
-     * 
-     */
-    findMany<T extends entity_required_documentFindManyArgs>(args?: SelectSubset<T, entity_required_documentFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$entity_required_documentPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
-
-    /**
-     * Create a Entity_required_document.
-     * @param {entity_required_documentCreateArgs} args - Arguments to create a Entity_required_document.
-     * @example
-     * // Create one Entity_required_document
-     * const Entity_required_document = await prisma.entity_required_document.create({
-     *   data: {
-     *     // ... data to create a Entity_required_document
-     *   }
-     * })
-     * 
-     */
-    create<T extends entity_required_documentCreateArgs>(args: SelectSubset<T, entity_required_documentCreateArgs<ExtArgs>>): Prisma__entity_required_documentClient<$Result.GetResult<Prisma.$entity_required_documentPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
-
-    /**
-     * Create many Entity_required_documents.
-     * @param {entity_required_documentCreateManyArgs} args - Arguments to create many Entity_required_documents.
-     * @example
-     * // Create many Entity_required_documents
-     * const entity_required_document = await prisma.entity_required_document.createMany({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     *     
-     */
-    createMany<T extends entity_required_documentCreateManyArgs>(args?: SelectSubset<T, entity_required_documentCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Delete a Entity_required_document.
-     * @param {entity_required_documentDeleteArgs} args - Arguments to delete one Entity_required_document.
-     * @example
-     * // Delete one Entity_required_document
-     * const Entity_required_document = await prisma.entity_required_document.delete({
-     *   where: {
-     *     // ... filter to delete one Entity_required_document
-     *   }
-     * })
-     * 
-     */
-    delete<T extends entity_required_documentDeleteArgs>(args: SelectSubset<T, entity_required_documentDeleteArgs<ExtArgs>>): Prisma__entity_required_documentClient<$Result.GetResult<Prisma.$entity_required_documentPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
-
-    /**
-     * Update one Entity_required_document.
-     * @param {entity_required_documentUpdateArgs} args - Arguments to update one Entity_required_document.
-     * @example
-     * // Update one Entity_required_document
-     * const entity_required_document = await prisma.entity_required_document.update({
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: {
-     *     // ... provide data here
-     *   }
-     * })
-     * 
-     */
-    update<T extends entity_required_documentUpdateArgs>(args: SelectSubset<T, entity_required_documentUpdateArgs<ExtArgs>>): Prisma__entity_required_documentClient<$Result.GetResult<Prisma.$entity_required_documentPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
-
-    /**
-     * Delete zero or more Entity_required_documents.
-     * @param {entity_required_documentDeleteManyArgs} args - Arguments to filter Entity_required_documents to delete.
-     * @example
-     * // Delete a few Entity_required_documents
-     * const { count } = await prisma.entity_required_document.deleteMany({
-     *   where: {
-     *     // ... provide filter here
-     *   }
-     * })
-     * 
-     */
-    deleteMany<T extends entity_required_documentDeleteManyArgs>(args?: SelectSubset<T, entity_required_documentDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Update zero or more Entity_required_documents.
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * @param {entity_required_documentUpdateManyArgs} args - Arguments to update one or more rows.
-     * @example
-     * // Update many Entity_required_documents
-     * const entity_required_document = await prisma.entity_required_document.updateMany({
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: {
-     *     // ... provide data here
-     *   }
-     * })
-     * 
-     */
-    updateMany<T extends entity_required_documentUpdateManyArgs>(args: SelectSubset<T, entity_required_documentUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create or update one Entity_required_document.
-     * @param {entity_required_documentUpsertArgs} args - Arguments to update or create a Entity_required_document.
-     * @example
-     * // Update or create a Entity_required_document
-     * const entity_required_document = await prisma.entity_required_document.upsert({
-     *   create: {
-     *     // ... data to create a Entity_required_document
-     *   },
-     *   update: {
-     *     // ... in case it already exists, update
-     *   },
-     *   where: {
-     *     // ... the filter for the Entity_required_document we want to update
-     *   }
-     * })
-     */
-    upsert<T extends entity_required_documentUpsertArgs>(args: SelectSubset<T, entity_required_documentUpsertArgs<ExtArgs>>): Prisma__entity_required_documentClient<$Result.GetResult<Prisma.$entity_required_documentPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
-
-
-    /**
-     * Count the number of Entity_required_documents.
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * @param {entity_required_documentCountArgs} args - Arguments to filter Entity_required_documents to count.
-     * @example
-     * // Count the number of Entity_required_documents
-     * const count = await prisma.entity_required_document.count({
-     *   where: {
-     *     // ... the filter for the Entity_required_documents we want to count
-     *   }
-     * })
-    **/
-    count<T extends entity_required_documentCountArgs>(
-      args?: Subset<T, entity_required_documentCountArgs>,
-    ): Prisma.PrismaPromise<
-      T extends $Utils.Record<'select', any>
-        ? T['select'] extends true
-          ? number
-          : GetScalarType<T['select'], Entity_required_documentCountAggregateOutputType>
-        : number
-    >
-
-    /**
-     * Allows you to perform aggregations operations on a Entity_required_document.
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * @param {Entity_required_documentAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
-     * @example
-     * // Ordered by age ascending
-     * // Where email contains prisma.io
-     * // Limited to the 10 users
-     * const aggregations = await prisma.user.aggregate({
-     *   _avg: {
-     *     age: true,
-     *   },
-     *   where: {
-     *     email: {
-     *       contains: "prisma.io",
-     *     },
-     *   },
-     *   orderBy: {
-     *     age: "asc",
-     *   },
-     *   take: 10,
-     * })
-    **/
-    aggregate<T extends Entity_required_documentAggregateArgs>(args: Subset<T, Entity_required_documentAggregateArgs>): Prisma.PrismaPromise<GetEntity_required_documentAggregateType<T>>
-
-    /**
-     * Group by Entity_required_document.
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * @param {entity_required_documentGroupByArgs} args - Group by arguments.
-     * @example
-     * // Group by city, order by createdAt, get count
-     * const result = await prisma.user.groupBy({
-     *   by: ['city', 'createdAt'],
-     *   orderBy: {
-     *     createdAt: true
-     *   },
-     *   _count: {
-     *     _all: true
-     *   },
-     * })
-     * 
-    **/
-    groupBy<
-      T extends entity_required_documentGroupByArgs,
-      HasSelectOrTake extends Or<
-        Extends<'skip', Keys<T>>,
-        Extends<'take', Keys<T>>
-      >,
-      OrderByArg extends True extends HasSelectOrTake
-        ? { orderBy: entity_required_documentGroupByArgs['orderBy'] }
-        : { orderBy?: entity_required_documentGroupByArgs['orderBy'] },
-      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
-      ByFields extends MaybeTupleToUnion<T['by']>,
-      ByValid extends Has<ByFields, OrderFields>,
-      HavingFields extends GetHavingFields<T['having']>,
-      HavingValid extends Has<ByFields, HavingFields>,
-      ByEmpty extends T['by'] extends never[] ? True : False,
-      InputErrors extends ByEmpty extends True
-      ? `Error: "by" must not be empty.`
-      : HavingValid extends False
-      ? {
-          [P in HavingFields]: P extends ByFields
-            ? never
-            : P extends string
-            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
-            : [
-                Error,
-                'Field ',
-                P,
-                ` in "having" needs to be provided in "by"`,
-              ]
-        }[HavingFields]
-      : 'take' extends Keys<T>
-      ? 'orderBy' extends Keys<T>
-        ? ByValid extends True
-          ? {}
-          : {
-              [P in OrderFields]: P extends ByFields
-                ? never
-                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
-            }[OrderFields]
-        : 'Error: If you provide "take", you also need to provide "orderBy"'
-      : 'skip' extends Keys<T>
-      ? 'orderBy' extends Keys<T>
-        ? ByValid extends True
-          ? {}
-          : {
-              [P in OrderFields]: P extends ByFields
-                ? never
-                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
-            }[OrderFields]
-        : 'Error: If you provide "skip", you also need to provide "orderBy"'
-      : ByValid extends True
-      ? {}
-      : {
-          [P in OrderFields]: P extends ByFields
-            ? never
-            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
-        }[OrderFields]
-    >(args: SubsetIntersection<T, entity_required_documentGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetEntity_required_documentGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
-  /**
-   * Fields of the entity_required_document model
-   */
-  readonly fields: entity_required_documentFieldRefs;
-  }
-
-  /**
-   * The delegate class that acts as a "Promise-like" for entity_required_document.
-   * Why is this prefixed with `Prisma__`?
-   * Because we want to prevent naming conflicts as mentioned in
-   * https://github.com/prisma/prisma-client-js/issues/707
-   */
-  export interface Prisma__entity_required_documentClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
-    readonly [Symbol.toStringTag]: "PrismaPromise"
-    entity<T extends entityDefaultArgs<ExtArgs> = {}>(args?: Subset<T, entityDefaultArgs<ExtArgs>>): Prisma__entityClient<$Result.GetResult<Prisma.$entityPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
-    /**
-     * Attaches callbacks for the resolution and/or rejection of the Promise.
-     * @param onfulfilled The callback to execute when the Promise is resolved.
-     * @param onrejected The callback to execute when the Promise is rejected.
-     * @returns A Promise for the completion of which ever callback is executed.
-     */
-    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
-    /**
-     * Attaches a callback for only the rejection of the Promise.
-     * @param onrejected The callback to execute when the Promise is rejected.
-     * @returns A Promise for the completion of the callback.
-     */
-    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
-    /**
-     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
-     * resolved value cannot be modified from the callback.
-     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
-     * @returns A Promise for the completion of the callback.
-     */
-    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
-  }
-
-
-
-
-  /**
-   * Fields of the entity_required_document model
-   */
-  interface entity_required_documentFieldRefs {
-    readonly entity_id: FieldRef<"entity_required_document", 'Int'>
-    readonly ETR_file: FieldRef<"entity_required_document", 'Boolean'>
-    readonly organisation_file: FieldRef<"entity_required_document", 'Boolean'>
-    readonly PO_file: FieldRef<"entity_required_document", 'Boolean'>
-    readonly PoD_file: FieldRef<"entity_required_document", 'Boolean'>
-    readonly signed_file: FieldRef<"entity_required_document", 'Boolean'>
-    readonly fx_file: FieldRef<"entity_required_document", 'Boolean'>
-    readonly proof_file: FieldRef<"entity_required_document", 'Boolean'>
-    readonly created_at: FieldRef<"entity_required_document", 'DateTime'>
-    readonly updated_at: FieldRef<"entity_required_document", 'DateTime'>
-    readonly deleted_at: FieldRef<"entity_required_document", 'DateTime'>
-  }
-    
-
-  // Custom InputTypes
-  /**
-   * entity_required_document findUnique
-   */
-  export type entity_required_documentFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the entity_required_document
-     */
-    select?: entity_required_documentSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the entity_required_document
-     */
-    omit?: entity_required_documentOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: entity_required_documentInclude<ExtArgs> | null
-    /**
-     * Filter, which entity_required_document to fetch.
-     */
-    where: entity_required_documentWhereUniqueInput
-  }
-
-  /**
-   * entity_required_document findUniqueOrThrow
-   */
-  export type entity_required_documentFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the entity_required_document
-     */
-    select?: entity_required_documentSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the entity_required_document
-     */
-    omit?: entity_required_documentOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: entity_required_documentInclude<ExtArgs> | null
-    /**
-     * Filter, which entity_required_document to fetch.
-     */
-    where: entity_required_documentWhereUniqueInput
-  }
-
-  /**
-   * entity_required_document findFirst
-   */
-  export type entity_required_documentFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the entity_required_document
-     */
-    select?: entity_required_documentSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the entity_required_document
-     */
-    omit?: entity_required_documentOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: entity_required_documentInclude<ExtArgs> | null
-    /**
-     * Filter, which entity_required_document to fetch.
-     */
-    where?: entity_required_documentWhereInput
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
-     * 
-     * Determine the order of entity_required_documents to fetch.
-     */
-    orderBy?: entity_required_documentOrderByWithRelationInput | entity_required_documentOrderByWithRelationInput[]
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
-     * 
-     * Sets the position for searching for entity_required_documents.
-     */
-    cursor?: entity_required_documentWhereUniqueInput
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
-     * 
-     * Take `±n` entity_required_documents from the position of the cursor.
-     */
-    take?: number
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
-     * 
-     * Skip the first `n` entity_required_documents.
-     */
-    skip?: number
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
-     * 
-     * Filter by unique combinations of entity_required_documents.
-     */
-    distinct?: Entity_required_documentScalarFieldEnum | Entity_required_documentScalarFieldEnum[]
-  }
-
-  /**
-   * entity_required_document findFirstOrThrow
-   */
-  export type entity_required_documentFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the entity_required_document
-     */
-    select?: entity_required_documentSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the entity_required_document
-     */
-    omit?: entity_required_documentOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: entity_required_documentInclude<ExtArgs> | null
-    /**
-     * Filter, which entity_required_document to fetch.
-     */
-    where?: entity_required_documentWhereInput
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
-     * 
-     * Determine the order of entity_required_documents to fetch.
-     */
-    orderBy?: entity_required_documentOrderByWithRelationInput | entity_required_documentOrderByWithRelationInput[]
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
-     * 
-     * Sets the position for searching for entity_required_documents.
-     */
-    cursor?: entity_required_documentWhereUniqueInput
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
-     * 
-     * Take `±n` entity_required_documents from the position of the cursor.
-     */
-    take?: number
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
-     * 
-     * Skip the first `n` entity_required_documents.
-     */
-    skip?: number
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
-     * 
-     * Filter by unique combinations of entity_required_documents.
-     */
-    distinct?: Entity_required_documentScalarFieldEnum | Entity_required_documentScalarFieldEnum[]
-  }
-
-  /**
-   * entity_required_document findMany
-   */
-  export type entity_required_documentFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the entity_required_document
-     */
-    select?: entity_required_documentSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the entity_required_document
-     */
-    omit?: entity_required_documentOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: entity_required_documentInclude<ExtArgs> | null
-    /**
-     * Filter, which entity_required_documents to fetch.
-     */
-    where?: entity_required_documentWhereInput
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
-     * 
-     * Determine the order of entity_required_documents to fetch.
-     */
-    orderBy?: entity_required_documentOrderByWithRelationInput | entity_required_documentOrderByWithRelationInput[]
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
-     * 
-     * Sets the position for listing entity_required_documents.
-     */
-    cursor?: entity_required_documentWhereUniqueInput
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
-     * 
-     * Take `±n` entity_required_documents from the position of the cursor.
-     */
-    take?: number
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
-     * 
-     * Skip the first `n` entity_required_documents.
-     */
-    skip?: number
-    distinct?: Entity_required_documentScalarFieldEnum | Entity_required_documentScalarFieldEnum[]
-  }
-
-  /**
-   * entity_required_document create
-   */
-  export type entity_required_documentCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the entity_required_document
-     */
-    select?: entity_required_documentSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the entity_required_document
-     */
-    omit?: entity_required_documentOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: entity_required_documentInclude<ExtArgs> | null
-    /**
-     * The data needed to create a entity_required_document.
-     */
-    data: XOR<entity_required_documentCreateInput, entity_required_documentUncheckedCreateInput>
-  }
-
-  /**
-   * entity_required_document createMany
-   */
-  export type entity_required_documentCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * The data used to create many entity_required_documents.
-     */
-    data: entity_required_documentCreateManyInput | entity_required_documentCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
-   * entity_required_document update
-   */
-  export type entity_required_documentUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the entity_required_document
-     */
-    select?: entity_required_documentSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the entity_required_document
-     */
-    omit?: entity_required_documentOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: entity_required_documentInclude<ExtArgs> | null
-    /**
-     * The data needed to update a entity_required_document.
-     */
-    data: XOR<entity_required_documentUpdateInput, entity_required_documentUncheckedUpdateInput>
-    /**
-     * Choose, which entity_required_document to update.
-     */
-    where: entity_required_documentWhereUniqueInput
-  }
-
-  /**
-   * entity_required_document updateMany
-   */
-  export type entity_required_documentUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * The data used to update entity_required_documents.
-     */
-    data: XOR<entity_required_documentUpdateManyMutationInput, entity_required_documentUncheckedUpdateManyInput>
-    /**
-     * Filter which entity_required_documents to update
-     */
-    where?: entity_required_documentWhereInput
-    /**
-     * Limit how many entity_required_documents to update.
-     */
-    limit?: number
-  }
-
-  /**
-   * entity_required_document upsert
-   */
-  export type entity_required_documentUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the entity_required_document
-     */
-    select?: entity_required_documentSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the entity_required_document
-     */
-    omit?: entity_required_documentOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: entity_required_documentInclude<ExtArgs> | null
-    /**
-     * The filter to search for the entity_required_document to update in case it exists.
-     */
-    where: entity_required_documentWhereUniqueInput
-    /**
-     * In case the entity_required_document found by the `where` argument doesn't exist, create a new entity_required_document with this data.
-     */
-    create: XOR<entity_required_documentCreateInput, entity_required_documentUncheckedCreateInput>
-    /**
-     * In case the entity_required_document was found with the provided `where` argument, update it with this data.
-     */
-    update: XOR<entity_required_documentUpdateInput, entity_required_documentUncheckedUpdateInput>
-  }
-
-  /**
-   * entity_required_document delete
-   */
-  export type entity_required_documentDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the entity_required_document
-     */
-    select?: entity_required_documentSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the entity_required_document
-     */
-    omit?: entity_required_documentOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: entity_required_documentInclude<ExtArgs> | null
-    /**
-     * Filter which entity_required_document to delete.
-     */
-    where: entity_required_documentWhereUniqueInput
-  }
-
-  /**
-   * entity_required_document deleteMany
-   */
-  export type entity_required_documentDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Filter which entity_required_documents to delete
-     */
-    where?: entity_required_documentWhereInput
-    /**
-     * Limit how many entity_required_documents to delete.
-     */
-    limit?: number
-  }
-
-  /**
-   * entity_required_document without action
-   */
-  export type entity_required_documentDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the entity_required_document
-     */
-    select?: entity_required_documentSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the entity_required_document
-     */
-    omit?: entity_required_documentOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: entity_required_documentInclude<ExtArgs> | null
   }
 
 
@@ -28488,23 +27339,6 @@ export namespace Prisma {
   export type Entity_propertyScalarFieldEnum = (typeof Entity_propertyScalarFieldEnum)[keyof typeof Entity_propertyScalarFieldEnum]
 
 
-  export const Entity_required_documentScalarFieldEnum: {
-    entity_id: 'entity_id',
-    ETR_file: 'ETR_file',
-    organisation_file: 'organisation_file',
-    PO_file: 'PO_file',
-    PoD_file: 'PoD_file',
-    signed_file: 'signed_file',
-    fx_file: 'fx_file',
-    proof_file: 'proof_file',
-    created_at: 'created_at',
-    updated_at: 'updated_at',
-    deleted_at: 'deleted_at'
-  };
-
-  export type Entity_required_documentScalarFieldEnum = (typeof Entity_required_documentScalarFieldEnum)[keyof typeof Entity_required_documentScalarFieldEnum]
-
-
   export const Entity_risk_and_ratesScalarFieldEnum: {
     id: 'id',
     entity_id: 'entity_id',
@@ -30189,7 +29023,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: Entity_mappingListRelationFilter
     entity_property_entity_property_entity_idToentity?: Entity_propertyListRelationFilter
     entity_property_entity_property_parent_idToentity?: Entity_propertyListRelationFilter
-    entity_required_document?: Entity_required_documentListRelationFilter
     entity_risk_and_rates?: Entity_risk_and_ratesListRelationFilter
     entity_role?: Entity_roleListRelationFilter
     people?: PeopleListRelationFilter
@@ -30221,7 +29054,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingOrderByRelationAggregateInput
     entity_property_entity_property_entity_idToentity?: entity_propertyOrderByRelationAggregateInput
     entity_property_entity_property_parent_idToentity?: entity_propertyOrderByRelationAggregateInput
-    entity_required_document?: entity_required_documentOrderByRelationAggregateInput
     entity_risk_and_rates?: entity_risk_and_ratesOrderByRelationAggregateInput
     entity_role?: entity_roleOrderByRelationAggregateInput
     people?: peopleOrderByRelationAggregateInput
@@ -30257,7 +29089,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: Entity_mappingListRelationFilter
     entity_property_entity_property_entity_idToentity?: Entity_propertyListRelationFilter
     entity_property_entity_property_parent_idToentity?: Entity_propertyListRelationFilter
-    entity_required_document?: Entity_required_documentListRelationFilter
     entity_risk_and_rates?: Entity_risk_and_ratesListRelationFilter
     entity_role?: Entity_roleListRelationFilter
     people?: PeopleListRelationFilter
@@ -30554,93 +29385,6 @@ export namespace Prisma {
     updated_by?: IntNullableWithAggregatesFilter<"entity_property"> | number | null
     created_at?: DateTimeNullableWithAggregatesFilter<"entity_property"> | Date | string | null
     updated_at?: DateTimeNullableWithAggregatesFilter<"entity_property"> | Date | string | null
-  }
-
-  export type entity_required_documentWhereInput = {
-    AND?: entity_required_documentWhereInput | entity_required_documentWhereInput[]
-    OR?: entity_required_documentWhereInput[]
-    NOT?: entity_required_documentWhereInput | entity_required_documentWhereInput[]
-    entity_id?: IntFilter<"entity_required_document"> | number
-    ETR_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    organisation_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    PO_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    PoD_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    signed_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    fx_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    proof_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    created_at?: DateTimeNullableFilter<"entity_required_document"> | Date | string | null
-    updated_at?: DateTimeNullableFilter<"entity_required_document"> | Date | string | null
-    deleted_at?: DateTimeNullableFilter<"entity_required_document"> | Date | string | null
-    entity?: XOR<EntityScalarRelationFilter, entityWhereInput>
-  }
-
-  export type entity_required_documentOrderByWithRelationInput = {
-    entity_id?: SortOrder
-    ETR_file?: SortOrderInput | SortOrder
-    organisation_file?: SortOrderInput | SortOrder
-    PO_file?: SortOrderInput | SortOrder
-    PoD_file?: SortOrderInput | SortOrder
-    signed_file?: SortOrderInput | SortOrder
-    fx_file?: SortOrderInput | SortOrder
-    proof_file?: SortOrderInput | SortOrder
-    created_at?: SortOrderInput | SortOrder
-    updated_at?: SortOrderInput | SortOrder
-    deleted_at?: SortOrderInput | SortOrder
-    entity?: entityOrderByWithRelationInput
-  }
-
-  export type entity_required_documentWhereUniqueInput = Prisma.AtLeast<{
-    entity_id?: number
-    AND?: entity_required_documentWhereInput | entity_required_documentWhereInput[]
-    OR?: entity_required_documentWhereInput[]
-    NOT?: entity_required_documentWhereInput | entity_required_documentWhereInput[]
-    ETR_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    organisation_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    PO_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    PoD_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    signed_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    fx_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    proof_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    created_at?: DateTimeNullableFilter<"entity_required_document"> | Date | string | null
-    updated_at?: DateTimeNullableFilter<"entity_required_document"> | Date | string | null
-    deleted_at?: DateTimeNullableFilter<"entity_required_document"> | Date | string | null
-    entity?: XOR<EntityScalarRelationFilter, entityWhereInput>
-  }, "entity_id">
-
-  export type entity_required_documentOrderByWithAggregationInput = {
-    entity_id?: SortOrder
-    ETR_file?: SortOrderInput | SortOrder
-    organisation_file?: SortOrderInput | SortOrder
-    PO_file?: SortOrderInput | SortOrder
-    PoD_file?: SortOrderInput | SortOrder
-    signed_file?: SortOrderInput | SortOrder
-    fx_file?: SortOrderInput | SortOrder
-    proof_file?: SortOrderInput | SortOrder
-    created_at?: SortOrderInput | SortOrder
-    updated_at?: SortOrderInput | SortOrder
-    deleted_at?: SortOrderInput | SortOrder
-    _count?: entity_required_documentCountOrderByAggregateInput
-    _avg?: entity_required_documentAvgOrderByAggregateInput
-    _max?: entity_required_documentMaxOrderByAggregateInput
-    _min?: entity_required_documentMinOrderByAggregateInput
-    _sum?: entity_required_documentSumOrderByAggregateInput
-  }
-
-  export type entity_required_documentScalarWhereWithAggregatesInput = {
-    AND?: entity_required_documentScalarWhereWithAggregatesInput | entity_required_documentScalarWhereWithAggregatesInput[]
-    OR?: entity_required_documentScalarWhereWithAggregatesInput[]
-    NOT?: entity_required_documentScalarWhereWithAggregatesInput | entity_required_documentScalarWhereWithAggregatesInput[]
-    entity_id?: IntWithAggregatesFilter<"entity_required_document"> | number
-    ETR_file?: BoolNullableWithAggregatesFilter<"entity_required_document"> | boolean | null
-    organisation_file?: BoolNullableWithAggregatesFilter<"entity_required_document"> | boolean | null
-    PO_file?: BoolNullableWithAggregatesFilter<"entity_required_document"> | boolean | null
-    PoD_file?: BoolNullableWithAggregatesFilter<"entity_required_document"> | boolean | null
-    signed_file?: BoolNullableWithAggregatesFilter<"entity_required_document"> | boolean | null
-    fx_file?: BoolNullableWithAggregatesFilter<"entity_required_document"> | boolean | null
-    proof_file?: BoolNullableWithAggregatesFilter<"entity_required_document"> | boolean | null
-    created_at?: DateTimeNullableWithAggregatesFilter<"entity_required_document"> | Date | string | null
-    updated_at?: DateTimeNullableWithAggregatesFilter<"entity_required_document"> | Date | string | null
-    deleted_at?: DateTimeNullableWithAggregatesFilter<"entity_required_document"> | Date | string | null
   }
 
   export type entity_risk_and_ratesWhereInput = {
@@ -32893,7 +31637,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleCreateNestedManyWithoutEntityInput
     people?: peopleCreateNestedManyWithoutEntityInput
@@ -32925,7 +31668,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentUncheckedCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleUncheckedCreateNestedManyWithoutEntityInput
     people?: peopleUncheckedCreateNestedManyWithoutEntityInput
@@ -32956,7 +31698,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUpdateManyWithoutEntityNestedInput
     people?: peopleUpdateManyWithoutEntityNestedInput
@@ -32988,7 +31729,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUncheckedUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUncheckedUpdateManyWithoutEntityNestedInput
     people?: peopleUncheckedUpdateManyWithoutEntityNestedInput
@@ -33287,103 +32027,6 @@ export namespace Prisma {
     updated_by?: NullableIntFieldUpdateOperationsInput | number | null
     created_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     updated_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  }
-
-  export type entity_required_documentCreateInput = {
-    ETR_file?: boolean | null
-    organisation_file?: boolean | null
-    PO_file?: boolean | null
-    PoD_file?: boolean | null
-    signed_file?: boolean | null
-    fx_file?: boolean | null
-    proof_file?: boolean | null
-    created_at?: Date | string | null
-    updated_at?: Date | string | null
-    deleted_at?: Date | string | null
-    entity: entityCreateNestedOneWithoutEntity_required_documentInput
-  }
-
-  export type entity_required_documentUncheckedCreateInput = {
-    entity_id: number
-    ETR_file?: boolean | null
-    organisation_file?: boolean | null
-    PO_file?: boolean | null
-    PoD_file?: boolean | null
-    signed_file?: boolean | null
-    fx_file?: boolean | null
-    proof_file?: boolean | null
-    created_at?: Date | string | null
-    updated_at?: Date | string | null
-    deleted_at?: Date | string | null
-  }
-
-  export type entity_required_documentUpdateInput = {
-    ETR_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    organisation_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    PO_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    PoD_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    signed_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    fx_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    proof_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    created_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    updated_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    entity?: entityUpdateOneRequiredWithoutEntity_required_documentNestedInput
-  }
-
-  export type entity_required_documentUncheckedUpdateInput = {
-    entity_id?: IntFieldUpdateOperationsInput | number
-    ETR_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    organisation_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    PO_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    PoD_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    signed_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    fx_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    proof_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    created_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    updated_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  }
-
-  export type entity_required_documentCreateManyInput = {
-    entity_id: number
-    ETR_file?: boolean | null
-    organisation_file?: boolean | null
-    PO_file?: boolean | null
-    PoD_file?: boolean | null
-    signed_file?: boolean | null
-    fx_file?: boolean | null
-    proof_file?: boolean | null
-    created_at?: Date | string | null
-    updated_at?: Date | string | null
-    deleted_at?: Date | string | null
-  }
-
-  export type entity_required_documentUpdateManyMutationInput = {
-    ETR_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    organisation_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    PO_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    PoD_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    signed_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    fx_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    proof_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    created_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    updated_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  }
-
-  export type entity_required_documentUncheckedUpdateManyInput = {
-    entity_id?: IntFieldUpdateOperationsInput | number
-    ETR_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    organisation_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    PO_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    PoD_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    signed_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    fx_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    proof_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    created_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    updated_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type entity_risk_and_ratesCreateInput = {
@@ -35408,12 +34051,6 @@ export namespace Prisma {
     none?: entity_propertyWhereInput
   }
 
-  export type Entity_required_documentListRelationFilter = {
-    every?: entity_required_documentWhereInput
-    some?: entity_required_documentWhereInput
-    none?: entity_required_documentWhereInput
-  }
-
   export type Entity_risk_and_ratesListRelationFilter = {
     every?: entity_risk_and_ratesWhereInput
     some?: entity_risk_and_ratesWhereInput
@@ -35449,10 +34086,6 @@ export namespace Prisma {
   }
 
   export type entity_propertyOrderByRelationAggregateInput = {
-    _count?: SortOrder
-  }
-
-  export type entity_required_documentOrderByRelationAggregateInput = {
     _count?: SortOrder
   }
 
@@ -35788,56 +34421,6 @@ export namespace Prisma {
     _count?: NestedIntNullableFilter<$PrismaModel>
     _min?: NestedEnumentity_property_is_primaryNullableFilter<$PrismaModel>
     _max?: NestedEnumentity_property_is_primaryNullableFilter<$PrismaModel>
-  }
-
-  export type entity_required_documentCountOrderByAggregateInput = {
-    entity_id?: SortOrder
-    ETR_file?: SortOrder
-    organisation_file?: SortOrder
-    PO_file?: SortOrder
-    PoD_file?: SortOrder
-    signed_file?: SortOrder
-    fx_file?: SortOrder
-    proof_file?: SortOrder
-    created_at?: SortOrder
-    updated_at?: SortOrder
-    deleted_at?: SortOrder
-  }
-
-  export type entity_required_documentAvgOrderByAggregateInput = {
-    entity_id?: SortOrder
-  }
-
-  export type entity_required_documentMaxOrderByAggregateInput = {
-    entity_id?: SortOrder
-    ETR_file?: SortOrder
-    organisation_file?: SortOrder
-    PO_file?: SortOrder
-    PoD_file?: SortOrder
-    signed_file?: SortOrder
-    fx_file?: SortOrder
-    proof_file?: SortOrder
-    created_at?: SortOrder
-    updated_at?: SortOrder
-    deleted_at?: SortOrder
-  }
-
-  export type entity_required_documentMinOrderByAggregateInput = {
-    entity_id?: SortOrder
-    ETR_file?: SortOrder
-    organisation_file?: SortOrder
-    PO_file?: SortOrder
-    PoD_file?: SortOrder
-    signed_file?: SortOrder
-    fx_file?: SortOrder
-    proof_file?: SortOrder
-    created_at?: SortOrder
-    updated_at?: SortOrder
-    deleted_at?: SortOrder
-  }
-
-  export type entity_required_documentSumOrderByAggregateInput = {
-    entity_id?: SortOrder
   }
 
   export type entity_risk_and_ratesOrderByRelevanceInput = {
@@ -36820,13 +35403,6 @@ export namespace Prisma {
     connect?: entity_propertyWhereUniqueInput | entity_propertyWhereUniqueInput[]
   }
 
-  export type entity_required_documentCreateNestedManyWithoutEntityInput = {
-    create?: XOR<entity_required_documentCreateWithoutEntityInput, entity_required_documentUncheckedCreateWithoutEntityInput> | entity_required_documentCreateWithoutEntityInput[] | entity_required_documentUncheckedCreateWithoutEntityInput[]
-    connectOrCreate?: entity_required_documentCreateOrConnectWithoutEntityInput | entity_required_documentCreateOrConnectWithoutEntityInput[]
-    createMany?: entity_required_documentCreateManyEntityInputEnvelope
-    connect?: entity_required_documentWhereUniqueInput | entity_required_documentWhereUniqueInput[]
-  }
-
   export type entity_risk_and_ratesCreateNestedManyWithoutEntityInput = {
     create?: XOR<entity_risk_and_ratesCreateWithoutEntityInput, entity_risk_and_ratesUncheckedCreateWithoutEntityInput> | entity_risk_and_ratesCreateWithoutEntityInput[] | entity_risk_and_ratesUncheckedCreateWithoutEntityInput[]
     connectOrCreate?: entity_risk_and_ratesCreateOrConnectWithoutEntityInput | entity_risk_and_ratesCreateOrConnectWithoutEntityInput[]
@@ -36909,13 +35485,6 @@ export namespace Prisma {
     connectOrCreate?: entity_propertyCreateOrConnectWithoutEntity_entity_property_parent_idToentityInput | entity_propertyCreateOrConnectWithoutEntity_entity_property_parent_idToentityInput[]
     createMany?: entity_propertyCreateManyEntity_entity_property_parent_idToentityInputEnvelope
     connect?: entity_propertyWhereUniqueInput | entity_propertyWhereUniqueInput[]
-  }
-
-  export type entity_required_documentUncheckedCreateNestedManyWithoutEntityInput = {
-    create?: XOR<entity_required_documentCreateWithoutEntityInput, entity_required_documentUncheckedCreateWithoutEntityInput> | entity_required_documentCreateWithoutEntityInput[] | entity_required_documentUncheckedCreateWithoutEntityInput[]
-    connectOrCreate?: entity_required_documentCreateOrConnectWithoutEntityInput | entity_required_documentCreateOrConnectWithoutEntityInput[]
-    createMany?: entity_required_documentCreateManyEntityInputEnvelope
-    connect?: entity_required_documentWhereUniqueInput | entity_required_documentWhereUniqueInput[]
   }
 
   export type entity_risk_and_ratesUncheckedCreateNestedManyWithoutEntityInput = {
@@ -37067,20 +35636,6 @@ export namespace Prisma {
     update?: entity_propertyUpdateWithWhereUniqueWithoutEntity_entity_property_parent_idToentityInput | entity_propertyUpdateWithWhereUniqueWithoutEntity_entity_property_parent_idToentityInput[]
     updateMany?: entity_propertyUpdateManyWithWhereWithoutEntity_entity_property_parent_idToentityInput | entity_propertyUpdateManyWithWhereWithoutEntity_entity_property_parent_idToentityInput[]
     deleteMany?: entity_propertyScalarWhereInput | entity_propertyScalarWhereInput[]
-  }
-
-  export type entity_required_documentUpdateManyWithoutEntityNestedInput = {
-    create?: XOR<entity_required_documentCreateWithoutEntityInput, entity_required_documentUncheckedCreateWithoutEntityInput> | entity_required_documentCreateWithoutEntityInput[] | entity_required_documentUncheckedCreateWithoutEntityInput[]
-    connectOrCreate?: entity_required_documentCreateOrConnectWithoutEntityInput | entity_required_documentCreateOrConnectWithoutEntityInput[]
-    upsert?: entity_required_documentUpsertWithWhereUniqueWithoutEntityInput | entity_required_documentUpsertWithWhereUniqueWithoutEntityInput[]
-    createMany?: entity_required_documentCreateManyEntityInputEnvelope
-    set?: entity_required_documentWhereUniqueInput | entity_required_documentWhereUniqueInput[]
-    disconnect?: entity_required_documentWhereUniqueInput | entity_required_documentWhereUniqueInput[]
-    delete?: entity_required_documentWhereUniqueInput | entity_required_documentWhereUniqueInput[]
-    connect?: entity_required_documentWhereUniqueInput | entity_required_documentWhereUniqueInput[]
-    update?: entity_required_documentUpdateWithWhereUniqueWithoutEntityInput | entity_required_documentUpdateWithWhereUniqueWithoutEntityInput[]
-    updateMany?: entity_required_documentUpdateManyWithWhereWithoutEntityInput | entity_required_documentUpdateManyWithWhereWithoutEntityInput[]
-    deleteMany?: entity_required_documentScalarWhereInput | entity_required_documentScalarWhereInput[]
   }
 
   export type entity_risk_and_ratesUpdateManyWithoutEntityNestedInput = {
@@ -37251,20 +35806,6 @@ export namespace Prisma {
     deleteMany?: entity_propertyScalarWhereInput | entity_propertyScalarWhereInput[]
   }
 
-  export type entity_required_documentUncheckedUpdateManyWithoutEntityNestedInput = {
-    create?: XOR<entity_required_documentCreateWithoutEntityInput, entity_required_documentUncheckedCreateWithoutEntityInput> | entity_required_documentCreateWithoutEntityInput[] | entity_required_documentUncheckedCreateWithoutEntityInput[]
-    connectOrCreate?: entity_required_documentCreateOrConnectWithoutEntityInput | entity_required_documentCreateOrConnectWithoutEntityInput[]
-    upsert?: entity_required_documentUpsertWithWhereUniqueWithoutEntityInput | entity_required_documentUpsertWithWhereUniqueWithoutEntityInput[]
-    createMany?: entity_required_documentCreateManyEntityInputEnvelope
-    set?: entity_required_documentWhereUniqueInput | entity_required_documentWhereUniqueInput[]
-    disconnect?: entity_required_documentWhereUniqueInput | entity_required_documentWhereUniqueInput[]
-    delete?: entity_required_documentWhereUniqueInput | entity_required_documentWhereUniqueInput[]
-    connect?: entity_required_documentWhereUniqueInput | entity_required_documentWhereUniqueInput[]
-    update?: entity_required_documentUpdateWithWhereUniqueWithoutEntityInput | entity_required_documentUpdateWithWhereUniqueWithoutEntityInput[]
-    updateMany?: entity_required_documentUpdateManyWithWhereWithoutEntityInput | entity_required_documentUpdateManyWithWhereWithoutEntityInput[]
-    deleteMany?: entity_required_documentScalarWhereInput | entity_required_documentScalarWhereInput[]
-  }
-
   export type entity_risk_and_ratesUncheckedUpdateManyWithoutEntityNestedInput = {
     create?: XOR<entity_risk_and_ratesCreateWithoutEntityInput, entity_risk_and_ratesUncheckedCreateWithoutEntityInput> | entity_risk_and_ratesCreateWithoutEntityInput[] | entity_risk_and_ratesUncheckedCreateWithoutEntityInput[]
     connectOrCreate?: entity_risk_and_ratesCreateOrConnectWithoutEntityInput | entity_risk_and_ratesCreateOrConnectWithoutEntityInput[]
@@ -37417,20 +35958,6 @@ export namespace Prisma {
     delete?: entityWhereInput | boolean
     connect?: entityWhereUniqueInput
     update?: XOR<XOR<entityUpdateToOneWithWhereWithoutEntity_property_entity_property_parent_idToentityInput, entityUpdateWithoutEntity_property_entity_property_parent_idToentityInput>, entityUncheckedUpdateWithoutEntity_property_entity_property_parent_idToentityInput>
-  }
-
-  export type entityCreateNestedOneWithoutEntity_required_documentInput = {
-    create?: XOR<entityCreateWithoutEntity_required_documentInput, entityUncheckedCreateWithoutEntity_required_documentInput>
-    connectOrCreate?: entityCreateOrConnectWithoutEntity_required_documentInput
-    connect?: entityWhereUniqueInput
-  }
-
-  export type entityUpdateOneRequiredWithoutEntity_required_documentNestedInput = {
-    create?: XOR<entityCreateWithoutEntity_required_documentInput, entityUncheckedCreateWithoutEntity_required_documentInput>
-    connectOrCreate?: entityCreateOrConnectWithoutEntity_required_documentInput
-    upsert?: entityUpsertWithoutEntity_required_documentInput
-    connect?: entityWhereUniqueInput
-    update?: XOR<XOR<entityUpdateToOneWithWhereWithoutEntity_required_documentInput, entityUpdateWithoutEntity_required_documentInput>, entityUncheckedUpdateWithoutEntity_required_documentInput>
   }
 
   export type entityCreateNestedOneWithoutEntity_risk_and_ratesInput = {
@@ -37974,7 +36501,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleCreateNestedManyWithoutEntityInput
     people?: peopleCreateNestedManyWithoutEntityInput
@@ -38005,7 +36531,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentUncheckedCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleUncheckedCreateNestedManyWithoutEntityInput
     people?: peopleUncheckedCreateNestedManyWithoutEntityInput
@@ -38086,7 +36611,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUpdateManyWithoutEntityNestedInput
     people?: peopleUpdateManyWithoutEntityNestedInput
@@ -38117,7 +36641,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUncheckedUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUncheckedUpdateManyWithoutEntityNestedInput
     people?: peopleUncheckedUpdateManyWithoutEntityNestedInput
@@ -38179,7 +36702,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleCreateNestedManyWithoutEntityInput
     people?: peopleCreateNestedManyWithoutEntityInput
@@ -38210,7 +36732,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentUncheckedCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleUncheckedCreateNestedManyWithoutEntityInput
     people?: peopleUncheckedCreateNestedManyWithoutEntityInput
@@ -38256,7 +36777,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUpdateManyWithoutEntityNestedInput
     people?: peopleUpdateManyWithoutEntityNestedInput
@@ -38287,7 +36807,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUncheckedUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUncheckedUpdateManyWithoutEntityNestedInput
     people?: peopleUncheckedUpdateManyWithoutEntityNestedInput
@@ -38500,7 +37019,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleCreateNestedManyWithoutEntityInput
     people?: peopleCreateNestedManyWithoutEntityInput
@@ -38531,7 +37049,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentUncheckedCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleUncheckedCreateNestedManyWithoutEntityInput
     people?: peopleUncheckedCreateNestedManyWithoutEntityInput
@@ -38607,7 +37124,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUpdateManyWithoutEntityNestedInput
     people?: peopleUpdateManyWithoutEntityNestedInput
@@ -38638,7 +37154,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUncheckedUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUncheckedUpdateManyWithoutEntityNestedInput
     people?: peopleUncheckedUpdateManyWithoutEntityNestedInput
@@ -39024,42 +37539,6 @@ export namespace Prisma {
     skipDuplicates?: boolean
   }
 
-  export type entity_required_documentCreateWithoutEntityInput = {
-    ETR_file?: boolean | null
-    organisation_file?: boolean | null
-    PO_file?: boolean | null
-    PoD_file?: boolean | null
-    signed_file?: boolean | null
-    fx_file?: boolean | null
-    proof_file?: boolean | null
-    created_at?: Date | string | null
-    updated_at?: Date | string | null
-    deleted_at?: Date | string | null
-  }
-
-  export type entity_required_documentUncheckedCreateWithoutEntityInput = {
-    ETR_file?: boolean | null
-    organisation_file?: boolean | null
-    PO_file?: boolean | null
-    PoD_file?: boolean | null
-    signed_file?: boolean | null
-    fx_file?: boolean | null
-    proof_file?: boolean | null
-    created_at?: Date | string | null
-    updated_at?: Date | string | null
-    deleted_at?: Date | string | null
-  }
-
-  export type entity_required_documentCreateOrConnectWithoutEntityInput = {
-    where: entity_required_documentWhereUniqueInput
-    create: XOR<entity_required_documentCreateWithoutEntityInput, entity_required_documentUncheckedCreateWithoutEntityInput>
-  }
-
-  export type entity_required_documentCreateManyEntityInputEnvelope = {
-    data: entity_required_documentCreateManyEntityInput | entity_required_documentCreateManyEntityInput[]
-    skipDuplicates?: boolean
-  }
-
   export type entity_risk_and_ratesCreateWithoutEntityInput = {
     c_max?: string | null
     c_daily?: string | null
@@ -39442,39 +37921,6 @@ export namespace Prisma {
     data: XOR<entity_propertyUpdateManyMutationInput, entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_parent_idToentityInput>
   }
 
-  export type entity_required_documentUpsertWithWhereUniqueWithoutEntityInput = {
-    where: entity_required_documentWhereUniqueInput
-    update: XOR<entity_required_documentUpdateWithoutEntityInput, entity_required_documentUncheckedUpdateWithoutEntityInput>
-    create: XOR<entity_required_documentCreateWithoutEntityInput, entity_required_documentUncheckedCreateWithoutEntityInput>
-  }
-
-  export type entity_required_documentUpdateWithWhereUniqueWithoutEntityInput = {
-    where: entity_required_documentWhereUniqueInput
-    data: XOR<entity_required_documentUpdateWithoutEntityInput, entity_required_documentUncheckedUpdateWithoutEntityInput>
-  }
-
-  export type entity_required_documentUpdateManyWithWhereWithoutEntityInput = {
-    where: entity_required_documentScalarWhereInput
-    data: XOR<entity_required_documentUpdateManyMutationInput, entity_required_documentUncheckedUpdateManyWithoutEntityInput>
-  }
-
-  export type entity_required_documentScalarWhereInput = {
-    AND?: entity_required_documentScalarWhereInput | entity_required_documentScalarWhereInput[]
-    OR?: entity_required_documentScalarWhereInput[]
-    NOT?: entity_required_documentScalarWhereInput | entity_required_documentScalarWhereInput[]
-    entity_id?: IntFilter<"entity_required_document"> | number
-    ETR_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    organisation_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    PO_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    PoD_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    signed_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    fx_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    proof_file?: BoolNullableFilter<"entity_required_document"> | boolean | null
-    created_at?: DateTimeNullableFilter<"entity_required_document"> | Date | string | null
-    updated_at?: DateTimeNullableFilter<"entity_required_document"> | Date | string | null
-    deleted_at?: DateTimeNullableFilter<"entity_required_document"> | Date | string | null
-  }
-
   export type entity_risk_and_ratesUpsertWithWhereUniqueWithoutEntityInput = {
     where: entity_risk_and_ratesWhereUniqueInput
     update: XOR<entity_risk_and_ratesUpdateWithoutEntityInput, entity_risk_and_ratesUncheckedUpdateWithoutEntityInput>
@@ -39615,7 +38061,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleCreateNestedManyWithoutEntityInput
     people?: peopleCreateNestedManyWithoutEntityInput
@@ -39646,7 +38091,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentUncheckedCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleUncheckedCreateNestedManyWithoutEntityInput
     people?: peopleUncheckedCreateNestedManyWithoutEntityInput
@@ -39681,7 +38125,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleCreateNestedManyWithoutEntityInput
     people?: peopleCreateNestedManyWithoutEntityInput
@@ -39712,7 +38155,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentUncheckedCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleUncheckedCreateNestedManyWithoutEntityInput
     people?: peopleUncheckedCreateNestedManyWithoutEntityInput
@@ -39758,7 +38200,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUpdateManyWithoutEntityNestedInput
     people?: peopleUpdateManyWithoutEntityNestedInput
@@ -39789,7 +38230,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUncheckedUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUncheckedUpdateManyWithoutEntityNestedInput
     people?: peopleUncheckedUpdateManyWithoutEntityNestedInput
@@ -39830,7 +38270,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUpdateManyWithoutEntityNestedInput
     people?: peopleUpdateManyWithoutEntityNestedInput
@@ -39861,7 +38300,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUncheckedUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUncheckedUpdateManyWithoutEntityNestedInput
     people?: peopleUncheckedUpdateManyWithoutEntityNestedInput
@@ -39891,7 +38329,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleCreateNestedManyWithoutEntityInput
     people?: peopleCreateNestedManyWithoutEntityInput
@@ -39922,7 +38359,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentUncheckedCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleUncheckedCreateNestedManyWithoutEntityInput
     people?: peopleUncheckedCreateNestedManyWithoutEntityInput
@@ -39957,7 +38393,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_parent_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_parent_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleCreateNestedManyWithoutEntityInput
     people?: peopleCreateNestedManyWithoutEntityInput
@@ -39988,7 +38423,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_parent_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_parent_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentUncheckedCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleUncheckedCreateNestedManyWithoutEntityInput
     people?: peopleUncheckedCreateNestedManyWithoutEntityInput
@@ -40034,7 +38468,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUpdateManyWithoutEntityNestedInput
     people?: peopleUpdateManyWithoutEntityNestedInput
@@ -40065,7 +38498,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUncheckedUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUncheckedUpdateManyWithoutEntityNestedInput
     people?: peopleUncheckedUpdateManyWithoutEntityNestedInput
@@ -40106,7 +38538,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_parent_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_parent_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUpdateManyWithoutEntityNestedInput
     people?: peopleUpdateManyWithoutEntityNestedInput
@@ -40137,7 +38568,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_parent_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_parent_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUncheckedUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUncheckedUpdateManyWithoutEntityNestedInput
     people?: peopleUncheckedUpdateManyWithoutEntityNestedInput
@@ -40202,7 +38632,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_parent_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_parent_idToentityInput
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleCreateNestedManyWithoutEntityInput
     people?: peopleCreateNestedManyWithoutEntityInput
@@ -40233,7 +38662,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_parent_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_parent_idToentityInput
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentUncheckedCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleUncheckedCreateNestedManyWithoutEntityInput
     people?: peopleUncheckedCreateNestedManyWithoutEntityInput
@@ -40268,7 +38696,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_parent_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_parent_idToentityInput
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
-    entity_required_document?: entity_required_documentCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleCreateNestedManyWithoutEntityInput
     people?: peopleCreateNestedManyWithoutEntityInput
@@ -40299,7 +38726,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_parent_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_parent_idToentityInput
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
-    entity_required_document?: entity_required_documentUncheckedCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleUncheckedCreateNestedManyWithoutEntityInput
     people?: peopleUncheckedCreateNestedManyWithoutEntityInput
@@ -40386,7 +38812,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_parent_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_parent_idToentityNestedInput
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUpdateManyWithoutEntityNestedInput
     people?: peopleUpdateManyWithoutEntityNestedInput
@@ -40417,7 +38842,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_parent_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_parent_idToentityNestedInput
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUncheckedUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUncheckedUpdateManyWithoutEntityNestedInput
     people?: peopleUncheckedUpdateManyWithoutEntityNestedInput
@@ -40458,7 +38882,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_parent_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_parent_idToentityNestedInput
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
-    entity_required_document?: entity_required_documentUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUpdateManyWithoutEntityNestedInput
     people?: peopleUpdateManyWithoutEntityNestedInput
@@ -40489,145 +38912,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_parent_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_parent_idToentityNestedInput
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
-    entity_required_document?: entity_required_documentUncheckedUpdateManyWithoutEntityNestedInput
-    entity_risk_and_rates?: entity_risk_and_ratesUncheckedUpdateManyWithoutEntityNestedInput
-    entity_role?: entity_roleUncheckedUpdateManyWithoutEntityNestedInput
-    people?: peopleUncheckedUpdateManyWithoutEntityNestedInput
-  }
-
-  export type entityCreateWithoutEntity_required_documentInput = {
-    type: number
-    name: string
-    trade_name?: string | null
-    creator_ledger_id?: number | null
-    computed_phones?: string | null
-    computed_addresses?: string | null
-    computed_emails?: string | null
-    prev_id?: string | null
-    created_by?: number | null
-    updated_by?: number | null
-    created_at?: Date | string | null
-    updated_at?: Date | string | null
-    deleted_at?: Date | string | null
-    is_deleted?: boolean
-    dups_ok?: number | null
-    address?: addressCreateNestedManyWithoutEntityInput
-    asset?: assetCreateNestedManyWithoutEntityInput
-    bank_account?: bank_accountCreateNestedManyWithoutEntityInput
-    entity_contact_entity_contact_entity_idToentity?: entity_contactCreateNestedManyWithoutEntity_entity_contact_entity_idToentityInput
-    entity_contact_entity_contact_parent_idToentity?: entity_contactCreateNestedManyWithoutEntity_entity_contact_parent_idToentityInput
-    entity_mapping_entity_mapping_parent_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_parent_idToentityInput
-    entity_mapping_entity_mapping_entity_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
-    entity_property_entity_property_entity_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
-    entity_property_entity_property_parent_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_risk_and_rates?: entity_risk_and_ratesCreateNestedManyWithoutEntityInput
-    entity_role?: entity_roleCreateNestedManyWithoutEntityInput
-    people?: peopleCreateNestedManyWithoutEntityInput
-  }
-
-  export type entityUncheckedCreateWithoutEntity_required_documentInput = {
-    entity_id?: number
-    type: number
-    name: string
-    trade_name?: string | null
-    creator_ledger_id?: number | null
-    computed_phones?: string | null
-    computed_addresses?: string | null
-    computed_emails?: string | null
-    prev_id?: string | null
-    created_by?: number | null
-    updated_by?: number | null
-    created_at?: Date | string | null
-    updated_at?: Date | string | null
-    deleted_at?: Date | string | null
-    is_deleted?: boolean
-    dups_ok?: number | null
-    address?: addressUncheckedCreateNestedManyWithoutEntityInput
-    asset?: assetUncheckedCreateNestedManyWithoutEntityInput
-    bank_account?: bank_accountUncheckedCreateNestedManyWithoutEntityInput
-    entity_contact_entity_contact_entity_idToentity?: entity_contactUncheckedCreateNestedManyWithoutEntity_entity_contact_entity_idToentityInput
-    entity_contact_entity_contact_parent_idToentity?: entity_contactUncheckedCreateNestedManyWithoutEntity_entity_contact_parent_idToentityInput
-    entity_mapping_entity_mapping_parent_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_parent_idToentityInput
-    entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
-    entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
-    entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_risk_and_rates?: entity_risk_and_ratesUncheckedCreateNestedManyWithoutEntityInput
-    entity_role?: entity_roleUncheckedCreateNestedManyWithoutEntityInput
-    people?: peopleUncheckedCreateNestedManyWithoutEntityInput
-  }
-
-  export type entityCreateOrConnectWithoutEntity_required_documentInput = {
-    where: entityWhereUniqueInput
-    create: XOR<entityCreateWithoutEntity_required_documentInput, entityUncheckedCreateWithoutEntity_required_documentInput>
-  }
-
-  export type entityUpsertWithoutEntity_required_documentInput = {
-    update: XOR<entityUpdateWithoutEntity_required_documentInput, entityUncheckedUpdateWithoutEntity_required_documentInput>
-    create: XOR<entityCreateWithoutEntity_required_documentInput, entityUncheckedCreateWithoutEntity_required_documentInput>
-    where?: entityWhereInput
-  }
-
-  export type entityUpdateToOneWithWhereWithoutEntity_required_documentInput = {
-    where?: entityWhereInput
-    data: XOR<entityUpdateWithoutEntity_required_documentInput, entityUncheckedUpdateWithoutEntity_required_documentInput>
-  }
-
-  export type entityUpdateWithoutEntity_required_documentInput = {
-    type?: IntFieldUpdateOperationsInput | number
-    name?: StringFieldUpdateOperationsInput | string
-    trade_name?: NullableStringFieldUpdateOperationsInput | string | null
-    creator_ledger_id?: NullableIntFieldUpdateOperationsInput | number | null
-    computed_phones?: NullableStringFieldUpdateOperationsInput | string | null
-    computed_addresses?: NullableStringFieldUpdateOperationsInput | string | null
-    computed_emails?: NullableStringFieldUpdateOperationsInput | string | null
-    prev_id?: NullableStringFieldUpdateOperationsInput | string | null
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
-    created_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    updated_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    is_deleted?: BoolFieldUpdateOperationsInput | boolean
-    dups_ok?: NullableIntFieldUpdateOperationsInput | number | null
-    address?: addressUpdateManyWithoutEntityNestedInput
-    asset?: assetUpdateManyWithoutEntityNestedInput
-    bank_account?: bank_accountUpdateManyWithoutEntityNestedInput
-    entity_contact_entity_contact_entity_idToentity?: entity_contactUpdateManyWithoutEntity_entity_contact_entity_idToentityNestedInput
-    entity_contact_entity_contact_parent_idToentity?: entity_contactUpdateManyWithoutEntity_entity_contact_parent_idToentityNestedInput
-    entity_mapping_entity_mapping_parent_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_parent_idToentityNestedInput
-    entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
-    entity_property_entity_property_entity_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
-    entity_property_entity_property_parent_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_risk_and_rates?: entity_risk_and_ratesUpdateManyWithoutEntityNestedInput
-    entity_role?: entity_roleUpdateManyWithoutEntityNestedInput
-    people?: peopleUpdateManyWithoutEntityNestedInput
-  }
-
-  export type entityUncheckedUpdateWithoutEntity_required_documentInput = {
-    entity_id?: IntFieldUpdateOperationsInput | number
-    type?: IntFieldUpdateOperationsInput | number
-    name?: StringFieldUpdateOperationsInput | string
-    trade_name?: NullableStringFieldUpdateOperationsInput | string | null
-    creator_ledger_id?: NullableIntFieldUpdateOperationsInput | number | null
-    computed_phones?: NullableStringFieldUpdateOperationsInput | string | null
-    computed_addresses?: NullableStringFieldUpdateOperationsInput | string | null
-    computed_emails?: NullableStringFieldUpdateOperationsInput | string | null
-    prev_id?: NullableStringFieldUpdateOperationsInput | string | null
-    created_by?: NullableIntFieldUpdateOperationsInput | number | null
-    updated_by?: NullableIntFieldUpdateOperationsInput | number | null
-    created_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    updated_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    is_deleted?: BoolFieldUpdateOperationsInput | boolean
-    dups_ok?: NullableIntFieldUpdateOperationsInput | number | null
-    address?: addressUncheckedUpdateManyWithoutEntityNestedInput
-    asset?: assetUncheckedUpdateManyWithoutEntityNestedInput
-    bank_account?: bank_accountUncheckedUpdateManyWithoutEntityNestedInput
-    entity_contact_entity_contact_entity_idToentity?: entity_contactUncheckedUpdateManyWithoutEntity_entity_contact_entity_idToentityNestedInput
-    entity_contact_entity_contact_parent_idToentity?: entity_contactUncheckedUpdateManyWithoutEntity_entity_contact_parent_idToentityNestedInput
-    entity_mapping_entity_mapping_parent_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_parent_idToentityNestedInput
-    entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
-    entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
-    entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUncheckedUpdateManyWithoutEntityNestedInput
     people?: peopleUncheckedUpdateManyWithoutEntityNestedInput
@@ -40658,7 +38942,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleCreateNestedManyWithoutEntityInput
     people?: peopleCreateNestedManyWithoutEntityInput
   }
@@ -40689,7 +38972,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentUncheckedCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleUncheckedCreateNestedManyWithoutEntityInput
     people?: peopleUncheckedCreateNestedManyWithoutEntityInput
   }
@@ -40735,7 +39017,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUpdateManyWithoutEntityNestedInput
     people?: peopleUpdateManyWithoutEntityNestedInput
   }
@@ -40766,7 +39047,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUncheckedUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUncheckedUpdateManyWithoutEntityNestedInput
     people?: peopleUncheckedUpdateManyWithoutEntityNestedInput
   }
@@ -40796,7 +39076,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesCreateNestedManyWithoutEntityInput
     people?: peopleCreateNestedManyWithoutEntityInput
   }
@@ -40827,7 +39106,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentUncheckedCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedCreateNestedManyWithoutEntityInput
     people?: peopleUncheckedCreateNestedManyWithoutEntityInput
   }
@@ -40958,7 +39236,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUpdateManyWithoutEntityNestedInput
     people?: peopleUpdateManyWithoutEntityNestedInput
   }
@@ -40989,7 +39266,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUncheckedUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedUpdateManyWithoutEntityNestedInput
     people?: peopleUncheckedUpdateManyWithoutEntityNestedInput
   }
@@ -41096,7 +39372,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleCreateNestedManyWithoutEntityInput
   }
@@ -41127,7 +39402,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedCreateNestedManyWithoutEntity_entity_mapping_entity_idToentityInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_entity_idToentityInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedCreateNestedManyWithoutEntity_entity_property_parent_idToentityInput
-    entity_required_document?: entity_required_documentUncheckedCreateNestedManyWithoutEntityInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedCreateNestedManyWithoutEntityInput
     entity_role?: entity_roleUncheckedCreateNestedManyWithoutEntityInput
   }
@@ -41173,7 +39447,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUpdateManyWithoutEntityNestedInput
   }
@@ -41204,7 +39477,6 @@ export namespace Prisma {
     entity_mapping_entity_mapping_entity_idToentity?: entity_mappingUncheckedUpdateManyWithoutEntity_entity_mapping_entity_idToentityNestedInput
     entity_property_entity_property_entity_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_entity_idToentityNestedInput
     entity_property_entity_property_parent_idToentity?: entity_propertyUncheckedUpdateManyWithoutEntity_entity_property_parent_idToentityNestedInput
-    entity_required_document?: entity_required_documentUncheckedUpdateManyWithoutEntityNestedInput
     entity_risk_and_rates?: entity_risk_and_ratesUncheckedUpdateManyWithoutEntityNestedInput
     entity_role?: entity_roleUncheckedUpdateManyWithoutEntityNestedInput
   }
@@ -41571,19 +39843,6 @@ export namespace Prisma {
     updated_by?: number | null
     created_at?: Date | string | null
     updated_at?: Date | string | null
-  }
-
-  export type entity_required_documentCreateManyEntityInput = {
-    ETR_file?: boolean | null
-    organisation_file?: boolean | null
-    PO_file?: boolean | null
-    PoD_file?: boolean | null
-    signed_file?: boolean | null
-    fx_file?: boolean | null
-    proof_file?: boolean | null
-    created_at?: Date | string | null
-    updated_at?: Date | string | null
-    deleted_at?: Date | string | null
   }
 
   export type entity_risk_and_ratesCreateManyEntityInput = {
@@ -42023,45 +40282,6 @@ export namespace Prisma {
     updated_by?: NullableIntFieldUpdateOperationsInput | number | null
     created_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     updated_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  }
-
-  export type entity_required_documentUpdateWithoutEntityInput = {
-    ETR_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    organisation_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    PO_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    PoD_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    signed_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    fx_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    proof_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    created_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    updated_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  }
-
-  export type entity_required_documentUncheckedUpdateWithoutEntityInput = {
-    ETR_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    organisation_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    PO_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    PoD_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    signed_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    fx_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    proof_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    created_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    updated_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  }
-
-  export type entity_required_documentUncheckedUpdateManyWithoutEntityInput = {
-    ETR_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    organisation_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    PO_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    PoD_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    signed_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    fx_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    proof_file?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    created_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    updated_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type entity_risk_and_ratesUpdateWithoutEntityInput = {

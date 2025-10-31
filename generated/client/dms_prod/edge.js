@@ -2217,7 +2217,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/generated/client/dms_prod",
+      "value": "C:\\Users\\wasihun melkamu\\Desktop\\data-cleaner_backend\\generated\\client\\dms_prod",
       "fromEnvVar": null
     },
     "config": {
@@ -2226,16 +2226,16 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "debian-openssl-3.0.x",
+        "value": "windows",
         "native": true
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/home/nesrucodex/Desktop/upwork_projects/azure-data-cleaner/prisma/dms_prod.prisma",
+    "sourceFilePath": "C:\\Users\\wasihun melkamu\\Desktop\\data-cleaner_backend\\prisma\\dms_prod.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null,
+    "rootEnvPath": "../../../.env",
     "schemaEnvPath": "../../../.env"
   },
   "relativePath": "../../../prisma",

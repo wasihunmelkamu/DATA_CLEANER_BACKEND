@@ -1,6 +1,8 @@
 generator client {
-  provider = "prisma-client-js"
-  output   = "../generated/client/entities_prod"
+  provider        = "prisma-client-js"
+  output          = "../generated/client/entities_prod"
+  previewFeatures = ["views"]
+  schemas         = ["entities_prod"]
 }
 
 datasource db {
@@ -253,7 +255,7 @@ model entity {
   entity_mapping_entity_mapping_entity_idToentity   entity_mapping[]           @relation("entity_mapping_entity_idToentity")
   entity_property_entity_property_entity_idToentity entity_property[]          @relation("entity_property_entity_idToentity")
   entity_property_entity_property_parent_idToentity entity_property[]          @relation("entity_property_parent_idToentity")
-  entity_required_document                          entity_required_document[]
+  entity_required_document                          entity_required_document[] @ignore
   entity_risk_and_rates                             entity_risk_and_rates[]
   entity_role                                       entity_role[]
   people                                            people[]
@@ -338,8 +340,8 @@ model entity_required_document {
   deleted_at        DateTime? @db.DateTime(0)
   entity            entity    @relation(fields: [entity_id], references: [entity_id], onDelete: NoAction, onUpdate: NoAction, map: "entity_required_document_ibfk_1")
 
-  @@id([entity_id])
   @@index([entity_id], map: "entity_id")
+  @@ignore
 }
 
 model entity_risk_and_rates {
@@ -519,6 +521,183 @@ model role {
   entity_role          entity_role[]
 
   @@index([name], map: "idx_role_name")
+}
+
+/// The underlying view does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+view qry_entity_role_bank {
+  role_name String? @db.VarChar(50)
+  bank_id   String? @db.VarChar(20)
+  entity_id Int?    @default(0)
+  bank_name String? @db.VarChar(255)
+
+  @@ignore
+}
+
+/// The underlying view does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+view qry_entity_role_credebtor {
+  role_name              String?  @db.VarChar(50)
+  credebtor_id           String?  @db.VarChar(20)
+  entity_id              Int?     @default(0)
+  credebtor_name         String?  @db.VarChar(255)
+  debtor_count           BigInt   @default(0)
+  creditor_count         BigInt?
+  debtor_iban_count      Decimal? @db.Decimal(42, 0)
+  debtor_account_count   Decimal? @db.Decimal(42, 0)
+  creditor_iban_count    Decimal? @db.Decimal(42, 0)
+  creditor_account_count Decimal? @db.Decimal(42, 0)
+
+  @@ignore
+}
+
+/// The underlying view does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+view qry_entity_role_creditor {
+  role_name       String? @db.VarChar(50)
+  creditor_id     String? @db.VarChar(20)
+  entity_id       Int?    @default(0)
+  creditor_name   String? @db.VarChar(255)
+  originator_id   String? @db.VarChar(20)
+  originator_name String? @db.VarChar(255)
+  credebtor_id    String? @db.VarChar(20)
+  credebtor_name  String? @db.VarChar(255)
+  iban_count      BigInt  @default(0)
+  account_count   BigInt  @default(0)
+  ibans           String? @db.Text
+  accounts        String? @db.Text
+  account_refs    String? @db.Text
+
+  @@ignore
+}
+
+/// The underlying view does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+view qry_entity_role_debtor {
+  role_name       String? @db.VarChar(50)
+  debtor_id       String? @db.VarChar(20)
+  entity_id       Int?
+  debtor_name     String? @db.VarChar(255)
+  originator_id   String? @db.VarChar(20)
+  originator_name String? @db.VarChar(255)
+  credebtor_id    String? @db.VarChar(20)
+  credebtor_name  String? @db.VarChar(255)
+  iban_count      BigInt  @default(0)
+  account_count   BigInt  @default(0)
+  ibans           String? @db.Text
+  accounts        String? @db.Text
+  account_refs    String? @db.Text
+
+  @@ignore
+}
+
+/// The underlying view does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+view qry_entity_role_intermediary {
+  role_name         String? @db.VarChar(50)
+  intermediary_id   String? @db.VarChar(20)
+  entity_id         Int?    @default(0)
+  intermediary_name String? @db.VarChar(255)
+  ibans             String? @db.Text
+
+  @@ignore
+}
+
+/// The underlying view does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+view qry_entity_role_investor {
+  role_name         String? @db.VarChar(50)
+  investor_id       String? @db.VarChar(20)
+  entity_id         Int?    @default(0)
+  investor_name     String? @db.VarChar(255)
+  intermediary_id   String? @db.VarChar(20)
+  intermediary_name String? @db.VarChar(255)
+  ibans             String? @db.Text
+
+  @@ignore
+}
+
+/// The underlying view does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+view qry_entity_role_originator {
+  role_name       String? @db.VarChar(50)
+  originator_id   String? @db.VarChar(20)
+  entity_id       Int?    @default(0)
+  originator_name String? @db.VarChar(255)
+  debtors         BigInt?
+  creditors       BigInt?
+  leasees         BigInt?
+  iban_count      BigInt  @default(0)
+  ibans           String? @db.Text
+
+  @@ignore
+}
+
+/// The underlying view does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+view qry_entity_role_owner {
+  role_name       String? @db.VarChar(50)
+  originator_id   String? @db.VarChar(20)
+  entity_id       Int?    @default(0)
+  originator_name String? @db.VarChar(255)
+  debtors         BigInt?
+  creditors       BigInt?
+  ibans           String? @db.Text
+
+  @@ignore
+}
+
+/// The underlying view does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+view qry_entity_role_supplier {
+  role_name     String? @db.VarChar(50)
+  supplier_id   String? @db.VarChar(20)
+  entity_id     Int?    @default(0)
+  supplier_name String? @db.VarChar(255)
+  ibans         String? @db.Text
+
+  @@ignore
+}
+
+/// The underlying view does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+view qry_entity_role_trustee {
+  role_name    String? @db.VarChar(50)
+  trustee_id   String? @db.VarChar(20)
+  entity_id    Int?    @default(0)
+  trustee_name String? @db.VarChar(255)
+
+  @@ignore
+}
+
+/// The underlying view does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+view qry_entity_role_user {
+  role_name  String? @db.VarChar(50)
+  user_id    String? @db.VarChar(20)
+  entity_id  Int?    @default(0)
+  user_name  String? @db.VarChar(255)
+  iban_count BigInt  @default(0)
+  ibans      String? @db.Text
+
+  @@ignore
+}
+
+/// The underlying view does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+view qry_entity_roles_all {
+  role_id         Int     @default(0)
+  role_name       String? @db.VarChar(50)
+  entity_role_id  String  @db.VarChar(20)
+  entity_id       Int?
+  entity_name     String  @db.VarChar(255)
+  trade_name      String? @db.VarChar(255)
+  parent_role_id  String? @db.VarChar(20)
+  related_role_id String? @db.VarChar(20)
+
+  @@ignore
+}
+
+/// The underlying view does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+view qry_entity_summary {
+  role_id          BigInt?
+  role_name        String? @db.VarChar(50)
+  imported_records BigInt  @default(0)
+  orphans          String? @db.VarChar(24)
+  total_banks      String? @db.VarChar(67)
+  iban             String? @db.VarChar(66)
+  account_no       String? @db.VarChar(66)
+  account_ref      String? @db.VarChar(21)
+
+  @@ignore
 }
 
 enum entity_contact_is_primary {

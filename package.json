@@ -4,7 +4,7 @@
   "description": "A backend service that cleans and normalizes data using Azure OpenAI and Prisma with MySQL.",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "nodemon src/server.ts",
+    "dev": "nodemon src/searcher.js",
     "build": "tsc",
     "start": "node dist/server.js",
     "prisma:generate": "prisma generate --schema=prisma/dms_prod.prisma && prisma generate --schema=prisma/entities.prod.prisma",

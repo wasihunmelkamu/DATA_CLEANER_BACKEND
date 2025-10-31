@@ -21,15 +21,15 @@ const convertBigIntToString = (obj: any): any => {
   }
   return obj;
 };
-
-dmsPrisma.$use(async (params, next) => {
+//@ts-ignore
+typeof dmsPrisma.$use === 'function' && dmsPrisma.$use(async (params, next) => {
   const result = await next(params);
   if (result === null || result === undefined) return result;
 
   return convertBigIntToString(result);
 });
-
-entitiesPrisma.$use(async (params, next) => {
+//@ts-ignore
+typeof entitiesPrisma.$use === 'function' &&entitiesPrisma.$use(async (params, next) => {
   const result = await next(params);
   if (result === null || result === undefined) return result;
 

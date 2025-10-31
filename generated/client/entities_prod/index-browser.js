@@ -365,20 +365,6 @@ exports.Prisma.Entity_propertyScalarFieldEnum = {
   updated_at: 'updated_at'
 };
 
-exports.Prisma.Entity_required_documentScalarFieldEnum = {
-  entity_id: 'entity_id',
-  ETR_file: 'ETR_file',
-  organisation_file: 'organisation_file',
-  PO_file: 'PO_file',
-  PoD_file: 'PoD_file',
-  signed_file: 'signed_file',
-  fx_file: 'fx_file',
-  proof_file: 'proof_file',
-  created_at: 'created_at',
-  updated_at: 'updated_at',
-  deleted_at: 'deleted_at'
-};
-
 exports.Prisma.Entity_risk_and_ratesScalarFieldEnum = {
   id: 'id',
   entity_id: 'entity_id',
@@ -783,7 +769,6 @@ exports.Prisma.ModelName = {
   entity_contact: 'entity_contact',
   entity_mapping: 'entity_mapping',
   entity_property: 'entity_property',
-  entity_required_document: 'entity_required_document',
   entity_risk_and_rates: 'entity_risk_and_rates',
   entity_role: 'entity_role',
   param: 'param',

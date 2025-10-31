@@ -2,8 +2,7 @@ import { Request, Response, NextFunction, ErrorRequestHandler } from "express";
 import { StatusCodes } from "http-status-codes";
 import logger from "../libs/logger";
 import APIResponseWriter from "../utils/apiResponseWriter";
-import { Prisma } from "@prisma/client";
-
+import { Prisma } from "../../generated/client/dms_prod";
 
 const expressRouteErrorHandlerMiddleware: ErrorRequestHandler = (
   err: any,
