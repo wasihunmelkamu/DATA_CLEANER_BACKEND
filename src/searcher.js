@@ -1,14 +1,14 @@
-// Use the generated clients for DMS and Entities
-const { PrismaClient: DMSPrismaClient } = require('./generated/client/dms_prod');
-const { PrismaClient: EntitiesPrismaClient } = require('./generated/client/entities_prod');
+import { PrismaClient as DMSPrismaClient } from '../generated/client/dms_prod/index.js'
+import { PrismaClient as EntitiesPrismaClient } from  '../generated/client/entities_prod/index.js'
 
 const dms = new DMSPrismaClient();
 const entities = new EntitiesPrismaClient();
 
 const searchTerm = process.argv[2];
+
 if (!searchTerm) {
   console.error('❌ Please provide a search term.');
-  console.log('👉 Example: node searcher.js "name of five  indian people"');
+  console.log('👉 Example: node searcher.js "name of tk1211"');
   process.exit(1);
 }
 

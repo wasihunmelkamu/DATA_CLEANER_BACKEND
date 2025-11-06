@@ -9880,3 +9880,341 @@ Please make sure your database server is running at `4.234.194.233:3308`.
     at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
     at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
     at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 01:50:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 02:00:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 02:10:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 02:20:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 02:30:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 02:40:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 02:50:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 03:00:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 03:10:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 03:20:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 03:30:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 03:40:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 03:50:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 04:00:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 04:30:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 04:40:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 04:50:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 05:00:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 05:10:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 05:20:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 05:30:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 05:40:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 05:50:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 06:00:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 06:50:05 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7268)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2025-11-04 07:00:05 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7268)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
+    at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7

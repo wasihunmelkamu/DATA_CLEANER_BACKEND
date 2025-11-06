@@ -2,7 +2,7 @@
 
 # === CONFIGURATION ===
 DB_IP="4.234.194.233"
-VPN_INTERFACE=${1:-"tun0"}  # You can pass interface name as first argument or default to tun0
+VPN_INTERFACE=${1:-"tun0"}  # You can pass interface name as first argment or default to tun0
 
 # === CHECK VPN INTERFACE ===
 if ! ip link show "$VPN_INTERFACE" > /dev/null 2>&1; then

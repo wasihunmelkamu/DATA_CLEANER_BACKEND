@@ -2,5 +2,8 @@ node_modules
 /src/generated/prisma
 dist
 
-.env
 
+.env
+.logs
+.node_modules
+.prisma.zip
