@@ -1,15 +1,16 @@
 // controllers/naturalLanguageQuery.controller.ts
 
+
 import { StatusCodes } from "http-status-codes";
-import { entitiesPrisma, dmsPrisma } from "../config/db";
-import APIResponseWriter from "../utils/apiResponseWriter";
-import expressAsyncWrapper from "../utils/asyncHandler";
-import RouteError from "../utils/routeErrors";
-import logger from "../libs/logger";
-import { DataSourceRouterService, RoutingDecision } from "../services/dataSourceRouter.service";
-import { NaturalLanguageQueryAIService } from "../services/naturalLanguageQueryAIService.service";
-import { NaturalLanguageQueryAIServiceDMS } from "../services/naturalLanguageQueryAIService.dms.service";
-import { MarkdownSummaryAIService } from "../services/markdownSummaryAI.service";
+import { entitiesPrisma, dmsPrisma } from "../config/db.js";
+import APIResponseWriter from "../utils/apiResponseWriter.js";
+import expressAsyncWrapper from "../utils/asyncHandler.js";
+import RouteError from "../utils/routeErrors.js";
+import logger from "../libs/logger.js";
+import { DataSourceRouterService, RoutingDecision } from "../services/dataSourceRouter.service.js";
+import { NaturalLanguageQueryAIService } from "../services/naturalLanguageQueryAIService.service.js";
+import { NaturalLanguageQueryAIServiceDMS } from "../services/naturalLanguageQueryAIService.dms.service.js";
+import { MarkdownSummaryAIService } from "../services/markdownSummaryAI.service.js";
 
 // utils/extractDatabaseError.ts
 export function extractDatabaseError(error: any): string {
@@ -29,6 +30,7 @@ const MAX_CORRECTION_ATTEMPTS = 2;
 
 export const naturalLanguageQueryController = expressAsyncWrapper(
     async (req, res) => {
+        
         const { question }: NaturalQueryRequestBody = req.body;
 
         if (!question || typeof question !== "string" || !question.trim()) {

@@ -1,18 +1,19 @@
 import express from "express";
 import cors from "cors";
-
-import expressRouteErrorHandlerMiddleware from "./middlewares/expressRouteErrorHandler";
-import rateLimiter from "./middlewares/rateLimiter";
+import { fileURLToPath } from "url";
+import expressRouteErrorHandlerMiddleware from "./middlewares/expressRouteErrorHandler.js";
+import rateLimiter from "./middlewares/rateLimiter.js";
 
 import { swaggerRoute, healthRoute, tablesRoute, cleanupRoute } from "./routes";
 import path from "path";
-import { HEALTH_CHECK_URL, NODE_ENV } from "./config/env";
-import { startHealthCheckCron } from "./crons";
+import { HEALTH_CHECK_URL, NODE_ENV } from "./config/env.js";
+import { startHealthCheckCron } from "./crons/index.js";
 import morgan from "morgan";
 import { logger } from "@azure/identity";
-import { dmsPrisma, entitiesPrisma } from "./config/db";
-import naturalQueryRoute from "./routes/natural-query.route";
-
+import { dmsPrisma, entitiesPrisma } from "./config/db.js";
+import naturalQueryRoute from "./routes/natural-query.route.js";
+const __filename=fileURLToPath(import.meta.url)
+const __dirname=path.dirname(__filename)
 const app = express();
 
 app.use(cors());

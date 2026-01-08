@@ -1,5 +1,6 @@
 import { createLogger, format, transports } from 'winston';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
 const { combine, timestamp, printf, colorize, errors } = format;
 
@@ -8,6 +9,8 @@ const logFormat = printf(({ level, message, timestamp, stack }) => {
   return `${timestamp} [${level}]: ${stack || message}`;
 });
 
+const __filename=fileURLToPath(import.meta.url)
+const __dirname=path.dirname(__filename)
 // Winston logger instance
 const logger = createLogger({
   level: 'info',

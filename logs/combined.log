@@ -842,3 +842,260 @@ Please make sure your database server is running at `4.234.194.233:3308`.
     at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
     at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3
     at async C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7
+2026-01-08 03:59:47 [info]: 🚀Server running at http://localhost:3031
+2026-01-08 04:11:11 [info]: 🚀Server running at http://localhost:3031
+2026-01-08 04:52:06 [error]: TypeError: Cannot destructure property 'question' of 'req.body' as it is undefined.
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\naturalLanguageQuery.controller.ts:32:17)
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:13)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:291:5)
+2026-01-08 04:52:38 [error]: SyntaxError: Unexpected token 'h', "home many "... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\body-parser\lib\types\json.js:156:10)
+    at parse (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\body-parser\lib\types\json.js:71:15)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\body-parser\lib\read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+2026-01-08 04:53:00 [error]: TypeError: Cannot destructure property 'question' of 'req.body' as it is undefined.
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\naturalLanguageQuery.controller.ts:32:17)
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:13)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:291:5)
+2026-01-08 04:54:38 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.entity.findMany()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\entities_prod\runtime\library.js:124:7268)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\entities_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\entities_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\entities_prod\runtime\library.js:133:9551)
+    at async <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\app.ts:47:20)
+2026-01-08 04:59:40 [error]: TypeError: Cannot destructure property 'question' of 'req.body' as it is undefined.
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\naturalLanguageQuery.controller.ts:32:17)
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:13)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:291:5)
+2026-01-08 05:02:02 [info]: 🚀Server running at http://localhost:3031
+2026-01-08 05:02:08 [error]: TypeError: Cannot destructure property 'question' of 'req.body' as it is undefined.
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\naturalLanguageQuery.controller.ts:32:17)
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:13)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:291:5)
+2026-01-08 05:02:10 [error]: TypeError: Cannot destructure property 'question' of 'req.body' as it is undefined.
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\naturalLanguageQuery.controller.ts:32:17)
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:13)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:291:5)
+2026-01-08 05:02:16 [error]: TypeError: Cannot destructure property 'question' of 'req.body' as it is undefined.
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\naturalLanguageQuery.controller.ts:32:17)
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:13)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:291:5)
+2026-01-08 05:04:03 [error]: TypeError: Cannot destructure property 'question' of 'req.body' as it is undefined.
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\naturalLanguageQuery.controller.ts:32:17)
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:13)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:291:5)
+2026-01-08 05:10:05 [error]: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `4.234.194.233:3308`
+
+Please make sure your database server is running at `4.234.194.233:3308`.
+    at ei.handleRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:7568)
+    at ei.handleAndLogRequestError (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6593)
+    at ei.request (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:124:6300)
+    at async a (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\generated\client\dms_prod\runtime\library.js:133:9551)
+    at async <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\health.controller.ts:10:3)
+    at async <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:7)
+2026-01-08 05:12:37 [error]: TypeError: Cannot destructure property 'question' of 'req.body' as it is undefined.
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\naturalLanguageQuery.controller.ts:32:17)
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:13)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:291:5)
+2026-01-08 05:12:38 [error]: TypeError: Cannot destructure property 'question' of 'req.body' as it is undefined.
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\naturalLanguageQuery.controller.ts:32:17)
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:13)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:291:5)
+2026-01-08 05:12:39 [error]: TypeError: Cannot destructure property 'question' of 'req.body' as it is undefined.
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\naturalLanguageQuery.controller.ts:32:17)
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:13)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:291:5)
+2026-01-08 05:12:40 [error]: TypeError: Cannot destructure property 'question' of 'req.body' as it is undefined.
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\naturalLanguageQuery.controller.ts:32:17)
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:13)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:291:5)
+2026-01-08 05:12:43 [error]: TypeError: Cannot destructure property 'question' of 'req.body' as it is undefined.
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\naturalLanguageQuery.controller.ts:32:17)
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:13)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:291:5)
+2026-01-08 05:13:16 [error]: TypeError: Cannot destructure property 'question' of 'req.body' as it is undefined.
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\naturalLanguageQuery.controller.ts:32:17)
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:13)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:291:5)
+2026-01-08 05:13:45 [error]: TypeError: Cannot destructure property 'question' of 'req.body' as it is undefined.
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\naturalLanguageQuery.controller.ts:32:17)
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:13)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:291:5)
+2026-01-08 05:13:47 [error]: TypeError: Cannot destructure property 'question' of 'req.body' as it is undefined.
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\naturalLanguageQuery.controller.ts:32:17)
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:13)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:291:5)
+2026-01-08 05:13:53 [error]: TypeError: Cannot destructure property 'question' of 'req.body' as it is undefined.
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\controllers\naturalLanguageQuery.controller.ts:32:17)
+    at <anonymous> (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\src\utils\asyncHandler.ts:24:13)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\router\index.js:291:5)
+2026-01-08 05:14:17 [info]: Routing Decision
+2026-01-08 05:14:17 [info]: Routing Decision Made
+2026-01-08 05:14:30 [info]: Query Executed Successfully
+2026-01-08 05:14:30 [warn]: SQL Execution Failed - Attempting AI Correction
+2026-01-08 05:14:44 [info]: Query Executed Successfully
+2026-01-08 05:14:44 [warn]: SQL Execution Failed - Attempting AI Correction
+2026-01-08 05:14:49 [info]: Query Executed Successfully
+2026-01-08 05:22:34 [info]: 🚀Server running at http://localhost:3031
+2026-01-08 05:23:14 [error]: SyntaxError: Bad control character in string literal in JSON at position 36 (line 1 column 37)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\body-parser\lib\types\json.js:77:19)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\body-parser\lib\read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2026-01-08 05:23:16 [error]: SyntaxError: Bad control character in string literal in JSON at position 36 (line 1 column 37)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\body-parser\lib\types\json.js:77:19)
+    at C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\body-parser\lib\read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\wasihun melkamu\Desktop\data-cleaner_backend\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2026-01-08 05:23:32 [info]: Routing Decision
+2026-01-08 05:23:32 [info]: Routing Decision Made
+2026-01-08 05:23:56 [info]: Query Executed Successfully
+2026-01-08 05:23:56 [warn]: SQL Execution Failed - Attempting AI Correction
+2026-01-08 05:24:06 [info]: Query Executed Successfully
+2026-01-08 05:24:06 [warn]: SQL Execution Failed - Attempting AI Correction
+2026-01-08 05:24:13 [info]: Query Executed Successfully
+2026-01-08 05:24:13 [warn]: SQL Execution Failed - Attempting AI Correction
+2026-01-08 05:24:13 [error]: Max correction attempts exceeded
+2026-01-08 05:24:57 [info]: Routing Decision
+2026-01-08 05:24:57 [info]: Routing Decision Made
+2026-01-08 05:25:06 [info]: 🚀Server running at http://localhost:3031

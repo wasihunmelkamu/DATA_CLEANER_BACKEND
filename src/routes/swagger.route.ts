@@ -3,11 +3,12 @@ import path from "path";
 import { Router } from "express";
 import swaggerUi from "swagger-ui-express";
 import yaml from "js-yaml";
+import { fileURLToPath } from "url";
 import type { JsonObject } from "swagger-ui-express";
-
 import logger from "../libs/logger";
 import APIResponseWriter from "../utils/apiResponseWriter";
-
+const __filename=fileURLToPath(import.meta.url)
+const __dirname=path.dirname(__filename)
 const SwaggerRouter = Router();
 
 // Path to Swagger YAML file
